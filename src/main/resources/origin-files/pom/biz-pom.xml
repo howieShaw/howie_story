@@ -108,27 +108,21 @@
         </dependency>
 
         <dependency>
-            <groupId>com.dianping.lion</groupId>
-            <artifactId>lion-client</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.dianping.zebra</groupId>
-            <artifactId>zebra-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>{GROUP}</groupId>
             <artifactId>{MODULE}-api</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-
+        {DEPEND-DP}
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -144,22 +138,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <version>2.6</version>
-                <configuration>
-                    <workspace>${basedir}</workspace>
-                    <workspaceCodeStylesURL>
-                        http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-eclipse-plugin/src/optional/eclipse-config/maven-styles.xml
-                    </workspaceCodeStylesURL>
-                    <downloadSources>true</downloadSources>
-                    <downloadJavadocs>false</downloadJavadocs>
-                    <wtpversion>1.5</wtpversion>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 

@@ -1,0 +1,11 @@
+    <dependency>
+        <groupId>com.dianping.lion</groupId>
+        <artifactId>lion-client</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.dianping.zebra</groupId>
+        <artifactId>zebra-api</artifactId>
+        <version>1.0.0</version>
+    </dependency>

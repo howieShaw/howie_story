@@ -18,7 +18,8 @@ public class ServiceImplFormat extends ServiceFormat {
             , String entityClassName
             , String daoImplementName
             , String prefixClassPackage
-            , TableMeta meta) throws ServiceException {
+            , TableMeta meta
+            , boolean needValidiate) throws ServiceException {
 
         StringBuilder builder = new StringBuilder();
         builder.append("package " + prefixClassPackage + ".biz.service.impl;" + Constant.RETURN);
@@ -37,16 +38,16 @@ public class ServiceImplFormat extends ServiceFormat {
         builder.append(getAutowiredList(daoImplementName));
         builder.append(Constant.RETURN);
 
-        builder.append(getAddFunctionImpl(dtoClassName, entityClassName, daoImplementName, meta) + Constant.RETURN);
+        builder.append(getAddFunctionImpl(dtoClassName, entityClassName, daoImplementName, meta, needValidiate) + Constant.RETURN);
 
         if (TableMetaUtil.hasLoadFunction(meta)) {
             builder.append(Constant.RETURN);
-            builder.append(getLoadFunctionImpl(dtoClassName, entityClassName, daoImplementName, meta) + ";" + Constant.RETURN);
+            builder.append(getLoadFunctionImpl(dtoClassName, entityClassName, daoImplementName, meta) + Constant.RETURN);
         }
 
         if (TableMetaUtil.hasUpdateFunction(meta)) {
             builder.append(Constant.RETURN);
-            builder.append(getUpdateFunctionImpl(dtoClassName, entityClassName, daoImplementName, meta) + Constant.RETURN);
+            builder.append(getUpdateFunctionImpl(dtoClassName, entityClassName, daoImplementName, meta, needValidiate) + Constant.RETURN);
         }
 
         builder.append(Constant.RETURN);
@@ -54,6 +55,16 @@ public class ServiceImplFormat extends ServiceFormat {
 
         builder.append(getQueryCountFunctionImpl(daoImplementName));
         builder.append(Constant.RETURN);
+
+        if (needValidiate) {
+            builder.append(getValidateAddFunction(dtoClassName, meta));
+            builder.append(Constant.RETURN);
+        }
+
+        if (needValidiate) {
+            builder.append(getValidateUpdateFunction(dtoClassName, meta));
+            builder.append(Constant.RETURN);
+        }
 
         builder.append(getDto2EntityFunctionImpl(dtoClassName, entityClassName, meta));
         builder.append(Constant.RETURN);
@@ -69,7 +80,8 @@ public class ServiceImplFormat extends ServiceFormat {
     private static String getAddFunctionImpl(String dtoClassName
             , String entityClassName
             , String daoImplementName
-            , TableMeta meta) throws ServiceException{
+            , TableMeta meta
+            , boolean needValidate) throws ServiceException{
 
         String dtoVar = StringUtil.toLowerForFirstChar(dtoClassName);
         String entityVar = StringUtil.toLowerForFirstChar(entityClassName);
@@ -79,6 +91,18 @@ public class ServiceImplFormat extends ServiceFormat {
         builder.append(Constant.TAB + "@Override" + Constant.RETURN);
         builder.append(Constant.TAB + "public " + getAddFunctionDeclaration(dtoClassName, meta) + " {" + Constant.RETURN);
         builder.append(Constant.RETURN);
+
+        if (needValidate) {
+            builder.append(Constant.TAB2 + "if (!validAdd(" + dtoVar + ")) {" + Constant.RETURN);
+            if (meta.isHasAutoIncrementColumn()) {
+                builder.append(Constant.TAB3 + "return null;" + Constant.RETURN);
+            }
+            else {
+                builder.append(Constant.TAB3 + "return false;" + Constant.RETURN);
+            }
+            builder.append(Constant.TAB2 + "}" + Constant.RETURN);
+            builder.append(Constant.RETURN);
+        }
 
         builder.append(Constant.TAB2 + entityClassName + " " + entityVar + " = dto2entity(" + dtoVar + ");" + Constant.RETURN);
         builder.append(Constant.TAB2 + daoVar  + ".insert(" + entityVar + ");" + Constant.RETURN);
@@ -98,7 +122,8 @@ public class ServiceImplFormat extends ServiceFormat {
     private static String getUpdateFunctionImpl(String dtoClassName
             , String entityClassName
             , String daoImplementName
-            , TableMeta meta) throws ServiceException{
+            , TableMeta meta
+            , boolean needValidate) throws ServiceException{
 
         String dtoVar = StringUtil.toLowerForFirstChar(dtoClassName);
         String entityVar = StringUtil.toLowerForFirstChar(entityClassName);
@@ -108,6 +133,18 @@ public class ServiceImplFormat extends ServiceFormat {
         builder.append(Constant.TAB + "@Override" + Constant.RETURN);
         builder.append(Constant.TAB + "public " + getUpdateFunctionDeclaration(dtoClassName, meta) + " {" + Constant.RETURN);
         builder.append(Constant.RETURN);
+
+        if (needValidate) {
+            builder.append(Constant.TAB2 + "if (!validUpdate(" + dtoVar + ")) {" + Constant.RETURN);
+            if (meta.isHasAutoIncrementColumn()) {
+                builder.append(Constant.TAB3 + "return null;" + Constant.RETURN);
+            }
+            else {
+                builder.append(Constant.TAB3 + "return false;" + Constant.RETURN);
+            }
+            builder.append(Constant.TAB2 + "}" + Constant.RETURN);
+            builder.append(Constant.RETURN);
+        }
 
         builder.append(Constant.TAB2 + entityClassName + " " + entityVar + " = dto2entity(" + dtoVar + ");" + Constant.RETURN);
         builder.append(Constant.TAB2 + daoVar  + ".update(" + entityVar + ");" + Constant.RETURN);
@@ -199,6 +236,74 @@ public class ServiceImplFormat extends ServiceFormat {
         builder.append(Constant.RETURN);
 
         builder.append(Constant.TAB2 + "return " + daoVar + ".queryCount();" + Constant.RETURN);
+
+        builder.append(Constant.TAB + "}" + Constant.RETURN);
+
+        return builder.toString();
+
+    }
+
+    private static String getValidateAddFunction(String dtoClassName
+            , TableMeta meta) throws ServiceException {
+
+        String dtoVar = StringUtil.toLowerForFirstChar(dtoClassName);
+
+        StringBuilder builder = new StringBuilder();
+        builder.append(Constant.TAB + "private boolean validAdd(" + dtoClassName + " " + dtoVar + ") {" + Constant.RETURN);
+        builder.append(Constant.RETURN);
+
+        builder.append(Constant.TAB2 + "if (" + dtoVar + " == null) {" + Constant.RETURN);
+        builder.append(Constant.TAB3 + "return false;" + Constant.RETURN);
+        builder.append(Constant.TAB2 +"}" + Constant.RETURN);
+        builder.append(Constant.RETURN);
+
+        for (ColumnMeta columnMeta : meta.getColumnMetas()) {
+            String getFunctionName = FieldFormat.getFieldFunctionName(columnMeta);
+
+            if (columnMeta.isNullable() || columnMeta.isAutoIncrement()) {
+                continue;
+            }
+
+            builder.append(Constant.TAB2 + "if (" + dtoVar + "." + getFunctionName + "() == null) {" + Constant.RETURN);
+            builder.append(Constant.TAB3 + "return false;" + Constant.RETURN);
+            builder.append(Constant.TAB2 + "}" + Constant.RETURN);
+            builder.append(Constant.RETURN);
+        }
+
+        builder.append(Constant.TAB2 + "return true;" + Constant.RETURN);
+
+        builder.append(Constant.TAB + "}" + Constant.RETURN);
+
+        return builder.toString();
+
+    }
+
+    private static String getValidateUpdateFunction(String dtoClassName
+            , TableMeta meta) throws ServiceException {
+
+        String dtoVar = StringUtil.toLowerForFirstChar(dtoClassName);
+
+        StringBuilder builder = new StringBuilder();
+        builder.append(Constant.TAB + "private boolean validUpdate(" + dtoClassName + " " + dtoVar + ") {" + Constant.RETURN);
+        builder.append(Constant.RETURN);
+
+        builder.append(Constant.TAB2 + "if (" + dtoVar + " == null) {" + Constant.RETURN);
+        builder.append(Constant.TAB3 + "return false;" + Constant.RETURN);
+        builder.append(Constant.TAB2 +"}" + Constant.RETURN);
+        builder.append(Constant.RETURN);
+
+        for (String primaryKey : meta.getPrimaryKeys()) {
+            ColumnMeta columnMeta = meta.getColumnMeta(primaryKey);
+
+            String getFunctionName = FieldFormat.getFieldFunctionName(columnMeta);
+
+            builder.append(Constant.TAB2 + "if (" + dtoVar + "." + getFunctionName + "() == null) {" + Constant.RETURN);
+            builder.append(Constant.TAB3 + "return false;" + Constant.RETURN);
+            builder.append(Constant.TAB2 + "}" + Constant.RETURN);
+            builder.append(Constant.RETURN);
+        }
+
+        builder.append(Constant.TAB2 + "return true;" + Constant.RETURN);
 
         builder.append(Constant.TAB + "}" + Constant.RETURN);
 

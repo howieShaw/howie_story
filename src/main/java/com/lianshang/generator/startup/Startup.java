@@ -70,6 +70,7 @@ public class Startup {
         config.setDbConfig(dbConfig);
         config.setSavePath("/Users/walker/Desktop");
         config.setIsDependDp(false);
+        config.setNeedValidate(true);
 
         return config;
     }

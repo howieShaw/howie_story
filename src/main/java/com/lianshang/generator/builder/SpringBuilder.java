@@ -26,7 +26,7 @@ public class SpringBuilder {
         String springSaveDir = dc.getBizResourcePrefixPath() + "/config/spring";
         FileUtil.makeDir(springSaveDir);
 
-        buildClientConfig(springSaveDir, baseConfig);
+        buildClientConfig(springSaveDir, baseConfig, mc.isDependDp());
 
         buildCoreConfig(springSaveDir, baseConfig);
 
@@ -39,10 +39,14 @@ public class SpringBuilder {
         buildServiceConfig(springSaveDir, baseConfig, mc, tableMetaList);
     }
 
-    private static void buildClientConfig(String springSaveDir, String baseConfig) {
+    private static void buildClientConfig(String springSaveDir, String baseConfig, boolean isDependDp) {
 
-        String content = Constant.TAB + "<bean name=\"placeholder\" lazy-init=\"false\" class=\"com.dianping.lion.client.InitializeConfig\">" + Constant.RETURN +
-                Constant.TAB + "</bean>" + Constant.RETURN;
+        String content = "";
+        if (isDependDp) {
+
+            content = Constant.TAB + "<bean name=\"placeholder\" lazy-init=\"false\" class=\"com.dianping.lion.client.InitializeConfig\">" + Constant.RETURN +
+                    Constant.TAB + "</bean>" + Constant.RETURN;
+        }
 
         buildConfig(springSaveDir + "/appcontext-client.xml", content, baseConfig);
     }

@@ -27,6 +27,8 @@ public class ModuleConfig {
 
     private boolean isDependDp;
 
+    private boolean needValidate;
+
     public String getGroupName() {
         return groupName;
     }
@@ -109,5 +111,13 @@ public class ModuleConfig {
 
     public void setIsDependDp(boolean isDependDp) {
         this.isDependDp = isDependDp;
+    }
+
+    public boolean isNeedValidate() {
+        return needValidate;
+    }
+
+    public void setNeedValidate(boolean needValidate) {
+        this.needValidate = needValidate;
     }
 }

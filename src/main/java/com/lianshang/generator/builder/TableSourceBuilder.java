@@ -89,7 +89,8 @@ public class TableSourceBuilder {
                 , entityClassName
                 , daoInterfaceName
                 , mc.getPrefixClassPackage()
-                , meta);
+                , meta
+                , mc.isNeedValidate());
 
         String filePath = dc.getBizSourcePrefixPath() + "/service/impl/" + serviceImplClassName + ".java";
 
