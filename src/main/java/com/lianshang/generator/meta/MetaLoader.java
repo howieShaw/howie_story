@@ -190,7 +190,7 @@ public class MetaLoader {
 
         String name;
 
-        if (tableName.startsWith(config.getTablePrefix())) {
+        if (config.getTablePrefix() != null && tableName.startsWith(config.getTablePrefix())) {
 
             name = tableName.substring(config.getTablePrefix().length());
         }

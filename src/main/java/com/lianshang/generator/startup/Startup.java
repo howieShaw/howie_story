@@ -60,17 +60,16 @@ public class Startup {
 //        dbConfig.setPassword("lsdbdev147");
 
         ModuleConfig config = new ModuleConfig();
-        config.setModuleName("com.lianshang");
+        config.setGroupName("com.lianshang"); //pom
         config.setModuleName("pc");
-        config.setGroupName("pc");
-        config.setBaseClassPackage("com.lianshang");
+        config.setBaseClassPackage("com.lianshang"); //class package prefix
         config.setTablePrefix("pc_");
-//        config.setAllowedTables(ImmutableList.of("pc_coupon"));
+        config.setAllowedTables(ImmutableList.of("pc_coupon"));
         config.setExclusionTables(new ArrayList<String>());
         config.setDbConfig(dbConfig);
         config.setSavePath("/Users/walker/Desktop");
-        config.setIsDependDp(false);
-        config.setNeedValidate(true);
+        config.setIsDependDp(true);
+        config.setNeedValidate(false);
 
         return config;
     }
