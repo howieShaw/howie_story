@@ -78,7 +78,12 @@ public class SqlmapBuilder {
 
         for (ColumnMeta columnMeta : meta.getColumnMetas()) {
             String fieldName = FieldFormat.getFieldName(columnMeta.getColumnName());
-            builder.append(Constant.TAB2 + "<id property=\"" + fieldName + "\" column=\"" + columnMeta.getColumnName() + "\" />" + Constant.RETURN);
+            if (meta.isInPrimaryKeys(fieldName)) {
+                builder.append(Constant.TAB2 + "<id property=\"" + fieldName + "\" column=\"" + columnMeta.getColumnName() + "\" />" + Constant.RETURN);
+            }
+            else {
+                builder.append(Constant.TAB2 + "<result property=\"" + fieldName + "\" column=\"" + columnMeta.getColumnName() + "\" />" + Constant.RETURN);
+            }
         }
 
         builder.append(Constant.TAB + "</resultMap>" + Constant.RETURN);
