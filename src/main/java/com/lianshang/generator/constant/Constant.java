@@ -9,6 +9,7 @@ public class Constant {
 
     public static final String TAB2 = "\t\t";
     public static final String TAB3 = "\t\t\t";
+    public static final String TAB4 = "\t\t\t\t";
 
     public static final String RETURN = "\r\n";
 

@@ -122,40 +122,35 @@ public class SqlmapBuilder {
         builder.append(">" + Constant.RETURN);
         builder.append(Constant.RETURN);
         builder.append(Constant.TAB2 + "insert into <include refid=\"tbl_name\" />" + Constant.RETURN);
-        builder.append(Constant.TAB2 + "(" + Constant.RETURN);
-        int insertFileCount = meta.getColumnMetas().size() + (meta.isHasAutoIncrementColumn()?-1:0);
-        int dealFieldCount = 0;
+        builder.append(Constant.TAB2 + "<trim prefix=\"(\" suffix=\")\" suffixOverrides=\",\" >" + Constant.RETURN);
+
         for (ColumnMeta columnMeta : meta.getColumnMetas()) {
             if (columnMeta.isAutoIncrement()) {
                 continue;
             }
-            ++dealFieldCount;
-            builder.append(Constant.TAB3 + columnMeta.getColumnName());
-            if (insertFileCount != dealFieldCount) {
-                builder.append(",");
-            }
+            String formatColumn = FieldFormat.getFieldName(columnMeta.getColumnName());
 
-            builder.append(Constant.RETURN);
+            builder.append(Constant.TAB3 + "<if test=\"entity.");
+            builder.append(formatColumn + " != null and entity." + formatColumn + " != ''\" >" + Constant.RETURN);
+            builder.append(Constant.TAB4 + columnMeta.getColumnName() + "," + Constant.RETURN);
+            builder.append(Constant.TAB3 + "</if>" + Constant.RETURN);
         }
-        builder.append(Constant.TAB2 + ")" + Constant.RETURN);
-        builder.append(Constant.TAB2 + "values" + Constant.RETURN);
-        builder.append(Constant.TAB2 + "(" + Constant.RETURN);
 
-        dealFieldCount = 0;
-        for (ColumnMeta columnMeta : meta.getColumnMetas()) {
+        builder.append(Constant.TAB2 + "</trim>" + Constant.RETURN);
+        builder.append(Constant.TAB2 + "<trim prefix=\"values (\" suffix=\")\" suffixOverrides=\",\" >" + Constant.RETURN);
+
+        for (ColumnMeta columnMeta: meta.getColumnMetas()) {
             if (columnMeta.isAutoIncrement()) {
                 continue;
             }
-            ++dealFieldCount;
-            builder.append(Constant.TAB3 + "#{entity." + FieldFormat.getFieldName(columnMeta.getColumnName()) + "}");
-            if (insertFileCount != dealFieldCount) {
-                builder.append(",");
-            }
+            String formatColumn = FieldFormat.getFieldName(columnMeta.getColumnName());
 
-            builder.append(Constant.RETURN);
+            builder.append(Constant.TAB3 + "<if test=\"entity.");
+            builder.append(formatColumn + " != null and entity." + formatColumn + " != ''\" >" + Constant.RETURN);
+            builder.append(Constant.TAB4 + "#{entity." + formatColumn + "}," + Constant.RETURN);
+            builder.append(Constant.TAB3 + "</if>" + Constant.RETURN);
         }
-        builder.append(Constant.TAB2 + ")" + Constant.RETURN);
-        builder.append(Constant.RETURN);
+        builder.append(Constant.TAB2 + "</trim>" + Constant.RETURN);
         builder.append(Constant.TAB + "</insert>" + Constant.RETURN);
 
         return builder.toString();
@@ -189,22 +184,20 @@ public class SqlmapBuilder {
         StringBuilder builder = new StringBuilder();
         builder.append(Constant.TAB + "<update id=\"update\" parameterType=\"map\">" + Constant.RETURN);
         builder.append(Constant.RETURN);
-        builder.append(Constant.TAB2 + "update <include refid=\"tbl_name\"/> set" + Constant.RETURN);
-        int updateFieldCount = meta.getColumnMetas().size() - meta.getPrimaryKeys().size();
-        int dealFieldCount = 0;
+        builder.append(Constant.TAB2 + "update <include refid=\"tbl_name\"/>" + Constant.RETURN);
+        builder.append(Constant.TAB2 + "<set >" + Constant.RETURN);
+
         for (ColumnMeta columnMeta : meta.getColumnMetas()) {
             if (meta.isInPrimaryKeys(columnMeta.getColumnName())) {
                 continue;
             }
 
-            ++dealFieldCount;
             String fieldName = FieldFormat.getFieldName(columnMeta.getColumnName());
-            builder.append(Constant.TAB3 + columnMeta.getColumnName() + " = #{entity." + fieldName + "}");
-            if (updateFieldCount != dealFieldCount) {
-                builder.append(",");
-            }
-            builder.append(Constant.RETURN);
+            builder.append(Constant.TAB3 + "<if test=\"entity." + fieldName + " != null and entity." + fieldName + " != ''\" >" + Constant.RETURN);
+            builder.append(Constant.TAB4 + columnMeta.getColumnName() + " = #{entity." + fieldName + "}," + Constant.RETURN);
+            builder.append(Constant.TAB3 + "</if>" + Constant.RETURN);
         }
+        builder.append(Constant.TAB2 + "</set>" + Constant.RETURN);
         builder.append(Constant.TAB2 + "where ");
         for (int i = 0; i < meta.getPrimaryKeys().size(); ++i) {
             if (i != 0) {
