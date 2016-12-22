@@ -47,11 +47,11 @@ public class Startup {
     private static ModuleConfig getModuleConfig() {
 
         DBConfig dbConfig = new DBConfig();
-        dbConfig.setIp("10.21.11.111");
+        dbConfig.setIp("localhost");
         dbConfig.setPort(3306);
         dbConfig.setDatabase("lianshang");
-        dbConfig.setUsername("lssite");
-        dbConfig.setPassword("dftxbZik5ah3Zrv3");
+        dbConfig.setUsername("root");
+        dbConfig.setPassword("123456");
 
 //        dbConfig.setIp("192.168.1.229");
 //        dbConfig.setPort(3306);
@@ -61,13 +61,13 @@ public class Startup {
 
         ModuleConfig config = new ModuleConfig();
         config.setGroupName("com.lianshang"); //pom
-        config.setModuleName("wechat");
+        config.setModuleName("pc");
         config.setBaseClassPackage("com.lianshang"); //class package prefix
-        config.setTablePrefix("wechat_");
-//        config.setAllowedTables(new ArrayList<String>());
-//        config.setExclusionTables(ImmutableList.of("pf_shop_profile"));
+        config.setTablePrefix("pc_");
+        config.setAllowedTables(ImmutableList.of("pc_coupon"));
+        config.setExclusionTables(new ArrayList<String>());
         config.setDbConfig(dbConfig);
-        config.setSavePath("D:\\develop\\testworkspace\\");
+        config.setSavePath("/Users/walker/Desktop");
         config.setIsDependDp(true);
         config.setNeedValidate(false);
 
