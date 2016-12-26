@@ -15,6 +15,8 @@ public class DirectoryConfig {
 
     private String bizTestSourcePrefixPath;
 
+    private String bizTestResourcePrefixPath;
+
     public String getModulePath() {
         return modulePath;
     }
@@ -53,5 +55,13 @@ public class DirectoryConfig {
 
     public void setBizTestSourcePrefixPath(String bizTestSourcePrefixPath) {
         this.bizTestSourcePrefixPath = bizTestSourcePrefixPath;
+    }
+
+    public String getBizTestResourcePrefixPath() {
+        return bizTestResourcePrefixPath;
+    }
+
+    public void setBizTestResourcePrefixPath(String bizTestResourcePrefixPath) {
+        this.bizTestResourcePrefixPath = bizTestResourcePrefixPath;
     }
 }

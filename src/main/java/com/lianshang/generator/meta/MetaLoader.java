@@ -4,10 +4,12 @@ import com.lianshang.generator.config.ModuleConfig;
 import com.lianshang.generator.exception.ServiceException;
 import com.lianshang.generator.util.DBUtil;
 import com.lianshang.generator.util.StringUtil;
+import org.apache.ibatis.annotations.Results;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +41,7 @@ public class MetaLoader {
                 tableMeta.setColumnMetas(loadColumns(table, connection));
                 tableMeta.setPrimaryKeys(loadPrimaryKeys(table, connection));
                 tableMeta.setPrefixName(getClassPrefixName(config, table));
-
+                tableMeta.setCreateTableSql(loadCreateTableSql(table, connection));
                 tableMetas.add(tableMeta);
             }
         }
@@ -154,6 +156,26 @@ public class MetaLoader {
         DBUtil.close(resultSet);
 
         return primaryKeys;
+    }
+
+    private static String loadCreateTableSql(String table, Connection connection) throws ServiceException {
+        ResultSet resultSet = null;
+        String createTblSql = null;
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("show create table " + table);
+
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                createTblSql = resultSet.getString(2);
+            }
+
+        } catch (Exception e) {
+            throw new ServiceException(-1, e.getMessage());
+        } finally {
+            DBUtil.close(resultSet);
+        }
+        return createTblSql;
     }
 
     private static boolean isValidTable(ModuleConfig config, String table) {

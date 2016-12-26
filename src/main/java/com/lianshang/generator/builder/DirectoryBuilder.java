@@ -42,12 +42,16 @@ public class DirectoryBuilder {
                 + getSourcePath(config.getBaseClassPackage()) + "/" + config.getModuleName()  + "/biz";
         FileUtil.makeDir(bizTestSourcePrefixPath);
 
+        String bizTestResourcePrefixPath = modulePath + "/" + config.getModuleName() + "-biz/src/test/resources";
+        FileUtil.makeDir(bizTestResourcePrefixPath);
+
         DirectoryConfig dc = new DirectoryConfig();
         dc.setModulePath(modulePath);
         dc.setApiSourcePrefixPath(apiSourcePrefixPath);
         dc.setBizSourcePrefixPath(bizSourcePrefixPath);
         dc.setBizResourcePrefixPath(bizResourcePrefixPath);
         dc.setBizTestSourcePrefixPath(bizTestSourcePrefixPath);
+        dc.setBizTestResourcePrefixPath(bizTestResourcePrefixPath);
 
         return dc;
     }

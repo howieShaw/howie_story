@@ -14,7 +14,8 @@ import com.lianshang.generator.util.ValueGenerateUtil;
 public class ServiceTestFormat {
 
     public static String getFileContent(String className
-            , String implementName
+            , String daoClassName
+            , String implName
             , String dtoClassName
             , String prefixClassPackage
             , TableMeta meta) throws ServiceException {
@@ -24,19 +25,21 @@ public class ServiceTestFormat {
         builder.append(Constant.RETURN);
 
         builder.append(getImportList(prefixClassPackage
-                , implementName
+                , daoClassName
+                , implName
                 , dtoClassName
                 , meta));
         builder.append(Constant.RETURN);
 
-        builder.append("public class " + className + " extends BaseTest {" + Constant.RETURN);
+        builder.append("@RunWith(MockitoJUnitRunner.class)" + Constant.RETURN);
+        builder.append("public class " + className + " {" + Constant.RETURN);
         builder.append(Constant.RETURN);
 
-        builder.append(getAutowiredList(implementName));
+        builder.append(getInjectMockList(implName, daoClassName));
         builder.append(Constant.RETURN);
 
-        builder.append(getTestFunctionImpl(implementName, dtoClassName, meta));
-        builder.append(Constant.RETURN);
+//        builder.append(getTestFunctionImpl(daoClassName, dtoClassName, meta));
+//        builder.append(Constant.RETURN);
 
         builder.append(getTestMockAddDataFunctionImpl(dtoClassName, meta));
         builder.append(Constant.RETURN);
@@ -181,6 +184,7 @@ public class ServiceTestFormat {
     }
 
     private static String getImportList(String prefixClassPackage
+            , String daoClassName
             , String implementName
             , String dtoClassName
             , TableMeta meta) throws ServiceException{
@@ -189,22 +193,33 @@ public class ServiceTestFormat {
 
         builder.append(EntityFormat.getImportList(meta));
         builder.append("import " + prefixClassPackage + ".api.dto." + dtoClassName + ";" + Constant.RETURN);
-        builder.append("import " + prefixClassPackage + ".api.service." + implementName + ";" + Constant.RETURN);
-        builder.append("import " + prefixClassPackage + ".biz.BaseTest;" + Constant.RETURN);
+        builder.append("import " + prefixClassPackage + ".biz.service.impl." + implementName + ";" + Constant.RETURN);
+        builder.append("import " + prefixClassPackage + ".biz.dao." + daoClassName + ";" + Constant.RETURN);
+        builder.append(Constant.RETURN);
+
         builder.append("import org.junit.Test;" + Constant.RETURN);
+        builder.append("import org.junit.runner.RunWith;" + Constant.RETURN);
+        builder.append("import org.mockito.InjectMocks;" + Constant.RETURN);
+        builder.append("import org.mockito.Mock;" + Constant.RETURN);
+        builder.append("import org.mockito.runners.MockitoJUnitRunner;" + Constant.RETURN);
+
         builder.append("import java.util.List;" + Constant.RETURN);
-        builder.append("import org.springframework.beans.factory.annotation.Autowired;" + Constant.RETURN);
 
         return builder.toString();
     }
 
-    private static String getAutowiredList(String implementName) {
+    private static String getInjectMockList(String implementName, String daoClassName) {
 
         String varName = StringUtil.toLowerForFirstChar(implementName);
+        String daoVarName = StringUtil.toLowerForFirstChar(daoClassName);
 
         StringBuilder builder = new StringBuilder();
-        builder.append(Constant.TAB + "@Autowired" + Constant.RETURN);
+        builder.append(Constant.TAB + "@InjectMocks" + Constant.RETURN);
         builder.append(Constant.TAB + "private " + implementName + " " + varName + ";" + Constant.RETURN);
+        builder.append(Constant.RETURN);
+
+        builder.append(Constant.TAB + "@Mock" + Constant.RETURN);
+        builder.append(Constant.TAB + "private " + daoClassName + " " + daoVarName + ";" + Constant.RETURN);
 
         return builder.toString();
     }

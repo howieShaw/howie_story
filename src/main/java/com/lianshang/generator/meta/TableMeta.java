@@ -1,6 +1,7 @@
 package com.lianshang.generator.meta;
 
 import com.google.common.base.MoreObjects;
+import com.lianshang.generator.util.StringUtil;
 
 import java.util.List;
 
@@ -16,6 +17,8 @@ public class TableMeta {
     private List<String> primaryKeys;
 
     private String prefixName;
+
+    private String createTableSql;
 
     public String getTableName() {
         return tableName;
@@ -47,6 +50,22 @@ public class TableMeta {
 
     public void setPrefixName(String prefixName) {
         this.prefixName = prefixName;
+    }
+
+    public String getCreateTableSql() {
+        return createTableSql;
+    }
+
+    public void setCreateTableSql(String createTableSql) {
+        for (ColumnMeta meta : columnMetas) {
+            String comment = meta.getComment();
+            if (!StringUtil.isEmpty(comment)) {
+                String replaceComment = "COMMENT '" + comment + "'";
+                createTableSql = createTableSql.replace(replaceComment, "");
+                createTableSql = createTableSql.replace("ON UPDATE CURRENT_TIMESTAMP", "");
+            }
+        }
+        this.createTableSql = createTableSql;
     }
 
     public ColumnMeta getColumnMeta(String name) {
@@ -99,6 +118,7 @@ public class TableMeta {
                 .add("columnMetas", columnMetas)
                 .add("primaryKeys", primaryKeys)
                 .add("prefixName", prefixName)
+                .add("createTableSql", createTableSql)
                 .toString();
     }
 }

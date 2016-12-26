@@ -27,6 +27,10 @@ public class NameUtil {
         return meta.getPrefixName() + "Dao";
     }
 
+    public static String getDaoTestClassName(TableMeta meta) {
+        return meta.getPrefixName() + "DaoTest";
+    }
+
     public static String getServiceImplClassName(TableMeta meta) {
 
         return meta.getPrefixName() + "ServiceImpl";
