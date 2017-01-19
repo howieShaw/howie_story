@@ -122,16 +122,18 @@ public class TestBuilder {
         String saveToDir = dc.getBizTestResourcePrefixPath() + "/mock/sql";
 
         FileUtil.makeDir(saveToDir);
+        boolean result = false;
 
-        String saveToFile = saveToDir + "/ddl.sql";
-
-        StringBuilder sb = new StringBuilder();
         for (TableMeta tableMeta: tableMetaList) {
+            String saveToFile = saveToDir  + "/" + tableMeta.getTableName() + "ddl.sql";
+
+            StringBuilder sb = new StringBuilder();
             sb.append(tableMeta.getCreateTableSql() + ";" + Constant.RETURN);
             sb.append(Constant.RETURN);
+
+            result = FileUtil.writeFile(saveToFile, sb.toString());
         }
 
-        boolean result = FileUtil.writeFile(saveToFile, sb.toString());
 
         assert  result;
     }
