@@ -45,6 +45,10 @@ public class Startup {
 
         TestBuilder.buildResource(mc, dc, tableMetaList);
         System.out.println("finish test resource build");
+
+        AngularJsBuilder.build(mc, dc, tableMetaList);
+        System.out.println("finish test angularJsBuilder build");
+
     }
 
     private static ModuleConfig getModuleConfig() {

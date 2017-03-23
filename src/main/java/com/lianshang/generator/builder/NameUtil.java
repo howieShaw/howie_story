@@ -40,4 +40,9 @@ public class NameUtil {
 
         return meta.getPrefixName() + "ServiceTest";
     }
+
+    public static String getHtmlName(TableMeta meta) {
+
+        return meta.getPrefixName() + ".html";
+    }
 }

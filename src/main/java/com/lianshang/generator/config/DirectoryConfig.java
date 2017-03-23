@@ -17,6 +17,17 @@ public class DirectoryConfig {
 
     private String bizTestResourcePrefixPath;
 
+    private String angularHtmlPath;
+
+
+    public String getAngularHtmlPath() {
+        return angularHtmlPath;
+    }
+
+    public void setAngularHtmlPath(String angularHtmlPath) {
+        this.angularHtmlPath = angularHtmlPath;
+    }
+
     public String getModulePath() {
         return modulePath;
     }
