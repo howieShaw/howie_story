@@ -15,6 +15,10 @@ public class AugularFormat  {
         StringBuilder builder = new StringBuilder();
         builder.append("<div class=\"wrapper wrapper-content animated fadeInRight ng-scope\">");
         builder.append(Constant.RETURN);
+        builder.append("  <div class=\"ibox-content m-b-sm border-bottom\">");
+        builder.append(Constant.RETURN);
+        builder.append("    <form class=\"form-horizontal\" ng-submit=\"submit()\">");
+        builder.append(Constant.RETURN);
 
         return builder.toString();
 
