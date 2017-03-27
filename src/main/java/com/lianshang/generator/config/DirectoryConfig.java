@@ -19,6 +19,15 @@ public class DirectoryConfig {
 
     private String angularHtmlPath;
 
+    private String angularControllerPath;
+
+    public String getAngularControllerPath() {
+        return angularControllerPath;
+    }
+
+    public void setAngularControllerPath(String angularControllerPath) {
+        this.angularControllerPath = angularControllerPath;
+    }
 
     public String getAngularHtmlPath() {
         return angularHtmlPath;
