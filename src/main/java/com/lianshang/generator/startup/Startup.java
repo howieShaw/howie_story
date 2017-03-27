@@ -64,10 +64,10 @@ public class Startup {
 
         ModuleConfig config = new ModuleConfig();
         config.setGroupName("com.lianshang"); //pom
-        config.setModuleName("crm");
+        config.setModuleName("item");
         config.setBaseClassPackage("com.lianshang"); //class package prefix
-        config.setTablePrefix("crm_shopinfo");
-//        config.setAllowedTables(ImmutableList.of("pc_coupon"));
+        config.setTablePrefix("sites_");
+        config.setAllowedTables(ImmutableList.of("sites_new_item_mark", "sites_new_item_property_value", "sites_new_item_property"));
         config.setExclusionTables(new ArrayList<String>());
         config.setDbConfig(dbConfig);
         config.setSavePath("D:\\develop\\testworkspace");

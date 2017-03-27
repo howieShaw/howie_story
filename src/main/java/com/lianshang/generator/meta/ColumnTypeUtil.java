@@ -29,7 +29,8 @@ public class ColumnTypeUtil {
         }
         else if ("VARCHAR".equalsIgnoreCase(type)
                 || "CHAR".equalsIgnoreCase(type)
-                || "TEXT".equalsIgnoreCase(type)) {
+                || "TEXT".equalsIgnoreCase(type)
+                || "MEDIUMTEXT".equalsIgnoreCase(type)) {
             return ColumnType.STRING;
         }
         else if ("FLOAT".equalsIgnoreCase(type)

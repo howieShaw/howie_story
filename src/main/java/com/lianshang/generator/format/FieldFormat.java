@@ -138,7 +138,7 @@ public class FieldFormat {
             case STRING:
                 return "String";
             case DOUBLE:
-                return "double";
+                return "Double";
             case DECIMAL:
                 return "BigDecimal";
             case DATE:
