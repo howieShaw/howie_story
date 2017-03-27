@@ -17,7 +17,7 @@ public class ColumnTypeUtil {
         }
         else if ("TINYINT".equalsIgnoreCase(type)
                 || "TINYINT UNSIGNED".equalsIgnoreCase(type)) {
-            return ColumnType.BYTE;
+            return ColumnType.INT;
         }
         else if ("INT".equalsIgnoreCase(type)
                 || "INT UNSIGNED".equalsIgnoreCase(type)) {
