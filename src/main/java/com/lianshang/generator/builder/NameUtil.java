@@ -1,6 +1,7 @@
 package com.lianshang.generator.builder;
 
 import com.lianshang.generator.meta.TableMeta;
+import com.lianshang.generator.util.Tools;
 
 /**
  * Created by walker on 16/2/17.
@@ -43,6 +44,6 @@ public class NameUtil {
 
     public static String getHtmlName(TableMeta meta) {
 
-        return meta.getPrefixName() + ".html";
+        return Tools.lineToHump(meta.getTableName()) + ".html";
     }
 }

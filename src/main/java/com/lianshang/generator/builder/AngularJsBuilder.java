@@ -3,12 +3,7 @@ package com.lianshang.generator.builder;
 import com.lianshang.generator.config.DirectoryConfig;
 import com.lianshang.generator.config.ModuleConfig;
 import com.lianshang.generator.exception.ServiceException;
-import com.lianshang.generator.format.AugularFormat;
-import com.lianshang.generator.format.DaoFormat;
-import com.lianshang.generator.format.DtoFormat;
-import com.lianshang.generator.format.EntityFormat;
-import com.lianshang.generator.format.ServiceFormat;
-import com.lianshang.generator.format.ServiceImplFormat;
+import com.lianshang.generator.format.AugularListHtmlFormat;
 import com.lianshang.generator.meta.TableMeta;
 import com.lianshang.generator.util.FileUtil;
 import java.util.List;
@@ -32,13 +27,15 @@ public class AngularJsBuilder {
 
         String className = NameUtil.getHtmlName(meta);
 
-        String fileContent = AugularFormat
+        String fileContent = AugularListHtmlFormat
             .getFileContent(className, mc.getPrefixClassPackage(), meta);
 
         String filePath = dc.getAngularHtmlPath()+ className ;
 
         boolean result = FileUtil.writeFile(filePath, fileContent);
         assert result;
+
+
     }
 
 
