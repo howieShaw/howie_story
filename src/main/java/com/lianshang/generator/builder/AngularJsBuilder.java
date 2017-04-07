@@ -25,13 +25,14 @@ public class AngularJsBuilder {
     }
 
     private static void buildAugularFile(ModuleConfig mc, DirectoryConfig dc, TableMeta meta) throws ServiceException{
+        String className = NameUtil.getClassName(meta);
 
-        String className = NameUtil.getHtmlName(meta);
+        String classHtmlName = NameUtil.getHtmlName(meta);
 
         String fileContent = AugularListHtmlFormat
-            .getFileContent(className, mc.getPrefixClassPackage(), meta);
+            .getFileContent(classHtmlName, mc.getPrefixClassPackage(), meta);
 
-        String filePath = dc.getAngularHtmlPath()+ className ;
+        String filePath = dc.getAngularHtmlPath()+ classHtmlName ;
 
         boolean result = FileUtil.writeFile(filePath, fileContent);
         assert result;

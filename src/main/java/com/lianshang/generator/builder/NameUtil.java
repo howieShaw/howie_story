@@ -46,6 +46,11 @@ public class NameUtil {
 
         return Tools.lineToHump(meta.getTableName()) + ".html";
     }
+
+    public static String getClassName(TableMeta meta) {
+
+        return Tools.lineToHump(meta.getTableName());
+    }
     public static String getAugularControllerName(TableMeta meta) {
 
         return Tools.lineToHump(meta.getTableName()) + ".controller.js"
