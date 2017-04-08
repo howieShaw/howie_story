@@ -30,11 +30,15 @@ public class AngularJsBuilder {
         String className = NameUtil.getClassName(meta);
 
         String classHtmlName = NameUtil.getHtmlName(meta);
+        String tableapath = dc.getAngularHtmlPath() +"/"+className+"/";
+        FileUtil.makeDir(tableapath);
+        String tablemodelpath = dc.getAngularHtmlPath() +"/"+className+"/"+"model";
+        FileUtil.makeDir(tablemodelpath);
 
         String fileContent = AugularListHtmlFormat
             .getFileContent(classHtmlName, mc.getPrefixClassPackage(), meta);
 
-        String filePath = dc.getAngularHtmlPath()+ classHtmlName ;
+        String filePath = tableapath+ classHtmlName ;
 
         boolean result = FileUtil.writeFile(filePath, fileContent);
         assert result;
@@ -43,7 +47,7 @@ public class AngularJsBuilder {
 
         String fileControllerContent = AugularListControllerFormat
             .getFileContent(className, mc.getPrefixClassPackage(), meta);
-        String fileeControllerPath = dc.getAngularHtmlPath()+ classControllerName ;
+        String fileeControllerPath = tableapath+ classControllerName ;
 
         result = FileUtil.writeFile(fileeControllerPath,fileControllerContent);
         assert result;
@@ -52,7 +56,7 @@ public class AngularJsBuilder {
 
         String fileMoudleContent = AugularListModuleFormat
             .getFileContent(className, mc.getPrefixClassPackage(), meta);
-        String fileMoudlePath = dc.getAngularHtmlPath()+ MoudleName ;
+        String fileMoudlePath = tableapath+ MoudleName ;
 
         result = FileUtil.writeFile(fileMoudlePath,fileMoudleContent);
         assert result;
@@ -62,7 +66,7 @@ public class AngularJsBuilder {
 
         String fileServiceContent = AugularListServiceFormat
             .getFileContent(className, mc.getPrefixClassPackage(), meta);
-        String fileServicePath = dc.getAngularHtmlPath()+ ServiceName ;
+        String fileServicePath = tableapath+ ServiceName ;
 
         result = FileUtil.writeFile(fileServicePath,fileServiceContent);
         assert result;
