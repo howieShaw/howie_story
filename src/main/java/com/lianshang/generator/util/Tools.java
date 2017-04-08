@@ -34,6 +34,12 @@ public class Tools {
     matcher.appendTail(sb);
     return sb.toString();
   }
+
+  public static String upCaptureName(String name) {
+    name = name.substring(0, 1).toUpperCase() + name.substring(1);
+    return  name;
+
+  }
   public static void main(String[] args) {
     String lineToHump = lineToHump("f_parent_no_leader");
     System.out.println(lineToHump);//fParentNoLeader

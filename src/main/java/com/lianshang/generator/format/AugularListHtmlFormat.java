@@ -13,7 +13,7 @@ public class AugularListHtmlFormat {
 
     public static String getFileContent(String className, String prefixClassPackage, TableMeta meta) throws ServiceException {
         String tableName = Tools.lineToHump(meta.getTableName());
-
+        String uptablename = Tools.upCaptureName(tableName);
         StringBuilder builder = new StringBuilder();
         builder.append("<div class=\"wrapper wrapper-content animated fadeInRight ng-scope\">");
         builder.append(Constant.RETURN);
@@ -23,7 +23,7 @@ public class AugularListHtmlFormat {
         builder.append(Constant.RETURN);
         builder.append("      <div class=\"row\">\n"
             + "        <div class=\"col-md-1\">\n"
-            + "          <button class=\"btn btn-primary btn-w-sm \" ng-click=\"add"+tableName+"()\" ng-disabled=\"queryBtnDisabled\">新增\n"
+            + "          <button class=\"btn btn-primary btn-w-sm \" ng-click=\"add"+uptablename+"()\" >新增\n"
             + "          </button>\n"
             + "        </div>\n"
             + "      </div>\n"

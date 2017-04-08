@@ -45,7 +45,7 @@ public class DirectoryBuilder {
         String bizTestResourcePrefixPath = modulePath + "/" + config.getModuleName() + "-biz/src/test/resources";
         FileUtil.makeDir(bizTestResourcePrefixPath);
 
-        String angularHtmlPath = modulePath + "/" + "webapp/app/" ;
+        String angularHtmlPath = modulePath + "/" + "webapp/app/"+config.getModuleName()+"/" ;
         FileUtil.makeDir(angularHtmlPath);
 
         DirectoryConfig dc = new DirectoryConfig();
@@ -56,6 +56,9 @@ public class DirectoryBuilder {
         dc.setBizTestSourcePrefixPath(bizTestSourcePrefixPath);
         dc.setBizTestResourcePrefixPath(bizTestResourcePrefixPath);
         dc.setAngularHtmlPath(angularHtmlPath);
+        dc.setAngularControllerPath(angularHtmlPath);
+        dc.setAngularModulePath(angularHtmlPath);
+        dc.setAngularServicesPath(angularHtmlPath);
         return dc;
     }
 

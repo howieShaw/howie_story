@@ -21,6 +21,26 @@ public class DirectoryConfig {
 
     private String angularControllerPath;
 
+    private String angularModulePath;
+
+    private String angularServicesPath;
+
+    public String getAngularModulePath() {
+        return angularModulePath;
+    }
+
+    public void setAngularModulePath(String angularModulePath) {
+        this.angularModulePath = angularModulePath;
+    }
+
+    public String getAngularServicesPath() {
+        return angularServicesPath;
+    }
+
+    public void setAngularServicesPath(String angularServicesPath) {
+        this.angularServicesPath = angularServicesPath;
+    }
+
     public String getAngularControllerPath() {
         return angularControllerPath;
     }

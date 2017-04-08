@@ -5,6 +5,8 @@ import com.lianshang.generator.config.ModuleConfig;
 import com.lianshang.generator.exception.ServiceException;
 import com.lianshang.generator.format.AugularListControllerFormat;
 import com.lianshang.generator.format.AugularListHtmlFormat;
+import com.lianshang.generator.format.AugularListModuleFormat;
+import com.lianshang.generator.format.AugularListServiceFormat;
 import com.lianshang.generator.meta.TableMeta;
 import com.lianshang.generator.util.FileUtil;
 import java.util.List;
@@ -45,7 +47,25 @@ public class AngularJsBuilder {
 
         result = FileUtil.writeFile(fileeControllerPath,fileControllerContent);
         assert result;
+//=============================================================================
+        String MoudleName = className+".module.js";
 
+        String fileMoudleContent = AugularListModuleFormat
+            .getFileContent(className, mc.getPrefixClassPackage(), meta);
+        String fileMoudlePath = dc.getAngularHtmlPath()+ MoudleName ;
+
+        result = FileUtil.writeFile(fileMoudlePath,fileMoudleContent);
+        assert result;
+
+        //=============================================================================
+        String ServiceName = className+".service.js";
+
+        String fileServiceContent = AugularListServiceFormat
+            .getFileContent(className, mc.getPrefixClassPackage(), meta);
+        String fileServicePath = dc.getAngularHtmlPath()+ ServiceName ;
+
+        result = FileUtil.writeFile(fileServicePath,fileServiceContent);
+        assert result;
     }
 
 

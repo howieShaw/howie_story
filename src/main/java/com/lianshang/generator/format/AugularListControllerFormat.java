@@ -14,22 +14,24 @@ public class AugularListControllerFormat {
     private static String getColmun(TableMeta meta){
         String ss = "";
         for(ColumnMeta columnMeta:meta.getColumnMetas()){
-            ss = ss+"  DTColumnBuilder.newColumn('"+columnMeta.getColumnName()+"').withTitle('"+columnMeta.getComment()+"') \n";
+            ss = ss+"  DTColumnBuilder.newColumn('"+columnMeta.getColumnName()+"').withTitle('"+columnMeta.getComment
+                ()+"'), \n";
         }
         return ss;
     }
     public static String getFileContent(String className, String prefixClassPackage, TableMeta meta) throws ServiceException {
         String tableName = Tools.lineToHump(meta.getTableName());
+        String uptableName = Tools.upCaptureName(tableName);
 
         StringBuilder builder = new StringBuilder();
         builder.append("(function () {\n"
             + "\n"
             + "  "+className+"Ctrl.$inject = ['$scope', '$http', '$uibModal', '$compile',\n"
-            + "    '$filter', 'toaster', 'activityMgmtService', 'DTOptionsBuilder',\n"
+            + "    '$filter', 'toaster', '"+className+"MgmtService', 'DTOptionsBuilder',\n"
             + "    'DTColumnBuilder', '$state'];\n"
             + "\n"
             + "  function "+className+"Ctrl($scope, $http, $uibModal, $compile, $filter,\n"
-            + "      toaster, activityMgmtService, DTOptionsBuilder, DTColumnBuilder, $state) {\n"
+            + "      toaster, "+tableName+"MgmtService, DTOptionsBuilder, DTColumnBuilder, $state) {\n"
             + "\n"
             + "    var vm = this;\n"
             + "    var rootCtrlScope = $scope;\n"
@@ -68,12 +70,10 @@ public class AugularListControllerFormat {
             + "      var start = aoData[3].value;\n"
             + "      var limit = aoData[4].value;\n"
             + "\n"
-            + "      if (vm.status == null || vm.status === '') {\n"
-            + "        vm.status = -1;\n"
-            + "      }\n"
+
             + "\n"
-            + "      return activityMgmtService.queryActivityList(vm.title, vm.status,\n"
-            + "          vm.reStartDate, vm.reEndDate, draw, sortColumn, sortDir, start, limit)\n"
+            + "      return "+className+"MgmtService.query"+uptableName+"List("
+            + "         draw, sortColumn, sortDir, start, limit)\n"
             + "      .then(function (resp) {\n"
             + "        fnCallback(resp.data);\n"
             + "        vm.tableData = resp.data;\n"
@@ -83,38 +83,58 @@ public class AugularListControllerFormat {
             + "\n"
             + "    }\n"
             + "\n"
-            + "    function actionsHtml(data, type, full, meta) {\n"+
-            "      str += '<button ng-disabled=\"true\" class=\"btn btn-xs btn-blue btn-rounded\" "
-            + "ng-click=\"edit"+className+"('\n"
+            + "    function actionsHtml(data, type, full, meta) {\n"
+            +" var str="
+            +"      str += '<button ng-disabled=\"false\" class=\"btn btn-xs btn-blue btn-rounded\" "
+            + "ng-click=\"edit"+uptableName+"('\n"
                 + "          + '\\'' + data.id + '\\')\">' +\n"
                 + "          '    <i class=\"fa fa-bolt\">编辑</i>' +\n"
                 + "          '</button>&nbsp;&nbsp;';\n"
-                + "                str += '<button ng-disabled=\"true\" class=\"btn btn-xs btn-blue btn-rounded\" ng-click=\"edit"+className+"('\n"
+                + "                str += '<button ng-disabled=\"false\" class=\"btn btn-xs btn-blue btn-rounded\" "
+            + "ng-click=\"view"+uptableName+"('\n"
                 + "          + '\\'' + data.id + '\\')\">' +\n"
                 + "          '    <i class=\"fa fa-bolt\">查看</i>' +\n"
                 + "          '</button>&nbsp;&nbsp;';\n"
-                + "                str += '<button ng-disabled=\"true\" class=\"btn btn-xs btn-blue btn-rounded\" ng-click=\"edit"+className+"('\n"
-                + "          + '\\'' + data.id + '\\')\">' +\n"
-                + "          '    <i class=\"fa fa-bolt\">删除</i>' +\n"
-                + "          '</button>&nbsp;&nbsp;';"
+
+
+            + "                str += '<button ng-disabled=\"false\" class=\"btn btn-xs btn-blue btn-rounded\" "
+            + "ng-click=\"delete"+uptableName+"('\n"
+            + "          + '\\'' + data.id + '\\')\">' +\n"
+            + "          '    <i class=\"fa fa-bolt\">删除</i>' +\n"
+            + "          '</button>&nbsp;&nbsp;';\n"
+
+
+
                 +"return str;"
                 + "}"
-                + "/n"
-            + "    $scope.add"+className+" = function () {\n"
+                + "\n"
+
+
+            + "    $scope.add"+uptableName+" = function () {\n"
+            +"         alert('进入新增')"
+            + "    }\n"
+            + "\n"
+            + "    $scope.edit"+uptableName+"  = function (id) {\n"
+            +"         alert('进入编辑')"
 
             + "    }\n"
             + "\n"
-            + "    $scope.edit\"+className+\" = function (id) {\n"
+            + "    $scope.view"+uptableName+"  = function (id) {\n"
+            +"         alert('进入查看')"
 
             + "    }\n"
             + "\n"
+            + "    $scope.delete"+uptableName+"  = function (id) {\n"
+            +"         alert('进入删除')"
 
+            + "    }\n"
+            + "\n"
 
             + "\n"
             + "  }\n"
             + "\n"
             + "  angular\n"
-            + "  .module('app.activity-mgmt')\n"
+            + "  .module('app."+className+"-mgmt')\n"
             + "  .controller('"+className+"Ctrl', "+className+"Ctrl);\n"
             + "\n"
             + "})();"

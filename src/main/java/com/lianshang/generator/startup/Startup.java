@@ -68,9 +68,9 @@ public class Startup {
 
         ModuleConfig config = new ModuleConfig();
         config.setGroupName("com.lianshang"); //pom
-        config.setModuleName("crm");
+        config.setModuleName("ac");
         config.setBaseClassPackage("com.lianshang"); //class package prefix
-        config.setTablePrefix("crm_shopinfo");
+        config.setTablePrefix("ac_activity");
 //        config.setAllowedTables(ImmutableList.of("pc_coupon"));
         config.setExclusionTables(new ArrayList<String>());
         config.setDbConfig(dbConfig);

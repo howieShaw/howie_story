@@ -14,7 +14,16 @@ public class AugularListModuleFormat {
         String tableName = Tools.lineToHump(meta.getTableName());
 
         StringBuilder builder = new StringBuilder();
-        builder.append("");
+        builder.append("(function () {\n"
+            + "\n"
+            + "  'use strict';\n"
+            + "\n"
+            + "  angular\n"
+            + "  .module('app."+className+"-mgmt', [\n"
+            + "    'app.core'\n"
+            + "  ]);\n"
+            + "\n"
+            + "})();\n");
 
         return builder.toString();
 
