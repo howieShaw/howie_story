@@ -4,10 +4,13 @@ import com.lianshang.generator.config.DirectoryConfig;
 import com.lianshang.generator.config.ModuleConfig;
 import com.lianshang.generator.exception.ServiceException;
 import com.lianshang.generator.format.AugularAddHtmlFormat;
+import com.lianshang.generator.format.AugularConfirmDeleteHtmlFormat;
+import com.lianshang.generator.format.AugularEditHtmlFormat;
 import com.lianshang.generator.format.AugularListControllerFormat;
 import com.lianshang.generator.format.AugularListHtmlFormat;
 import com.lianshang.generator.format.AugularListModuleFormat;
 import com.lianshang.generator.format.AugularListServiceFormat;
+import com.lianshang.generator.format.AugularViewHtmlFormat;
 import com.lianshang.generator.meta.TableMeta;
 import com.lianshang.generator.util.FileUtil;
 import java.util.List;
@@ -85,7 +88,7 @@ public class AngularJsBuilder {
         //=====================修改html============================================================
         String edithtml = "edit-"+className+".html";
 
-        String edithtmlContent = AugularAddHtmlFormat
+        String edithtmlContent = AugularEditHtmlFormat
             .getFileContent(className, mc.getPrefixClassPackage(), meta);
         String edithtmlPath = tablemodelpath+ "/"+edithtml ;
 
@@ -95,7 +98,7 @@ public class AngularJsBuilder {
         //=====================查看html============================================================
         String viewhtml = "view-"+className+".html";
 
-        String viewhtmlContent = AugularAddHtmlFormat
+        String viewhtmlContent = AugularViewHtmlFormat
             .getFileContent(className, mc.getPrefixClassPackage(), meta);
         String viewhtmlPath = tablemodelpath+ "/"+viewhtml ;
 
@@ -103,9 +106,9 @@ public class AngularJsBuilder {
         assert result;
 
         //=====================删除html============================================================
-        String deletehtml = "delete-"+className+".html";
+        String deletehtml = "confirmDelete-"+className+".html";
 
-        String deletehtmlContent = AugularAddHtmlFormat
+        String deletehtmlContent = AugularConfirmDeleteHtmlFormat
             .getFileContent(className, mc.getPrefixClassPackage(), meta);
         String deletehtmlPath = tablemodelpath+ "/"+deletehtml ;
 

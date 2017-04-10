@@ -31,7 +31,28 @@ public class AugularEditHtmlFormat {
         String upTableName = Tools.upCaptureName(tableName);
         StringBuilder builder = new StringBuilder();
         builder.append(
-            ""
+            "<div class=\"modal-dialog modal-lg no-margins\">\n"
+                + "  <div class=\"modal-header\">\n"
+                + "    <button type=\"button\" class=\"close\" ng-click=\"cancel()\" aria-label=\"Close\"><i class=\"fa fa-times\"></i></button>\n"
+                + "    <h4 class=\"modal-title\">绑定活动渠道</h4>\n"
+                + "  </div>\n"
+                + "  <div class=\"ibox float-e-margins\">\n"
+                + "    <div class=\"ibox-content m-b-sm border-bottom\">\n"
+                + "      <form class=\"form-horizontal\" ng-submit=\"submit($event)\">\n"
+                + "        <div class=\"row\">\n"
+                + "          <div class=\"col-sm-4\">\n"
+                + "            <div class=\"form-group\">\n"
+                +               getColmun(meta)
+                + "            </div>\n"
+                + "          </div>\n"
+                + "\n"
+                + "\n"
+
+                + "        </div>\n"
+                + "      </form>\n"
+                + "    </div>\n"
+                + "  </div>\n"
+                + "</div>"
         );
 
         return builder.toString();
