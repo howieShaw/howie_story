@@ -19,7 +19,49 @@ public class AugularListControllerFormat {
         }
         return ss;
     }
-    public static String getFileContent(String className, String prefixClassPackage, TableMeta meta) throws ServiceException {
+    private static String getAddJsFunction(TableMeta meta,String className,String uptableName, String tablepath,String tablemodelpath){
+        String ss = "   $scope.add"+uptableName+" = function () {\n"
+            + "      var opener = $scope\n"
+            + "      var modalInstance;\n"
+            + "      modalInstance = $uibModal.open({\n"
+            + "        templateUrl: '"+tablemodelpath+"/add-"+className+".html',\n"
+            + "        size: 'lg',\n"
+            + "        controller: function ($scope, $uibModal, $uibModalInstance) {\n"
+            + "          $scope.nextBtnDisabled = true;\n"
+            + "          $scope.cancel = function () {\n"
+            + "            $uibModalInstance.dismiss('cancel');\n"
+            + "          };\n"
+            + "\n"
+            + "          $scope.ok = function () {\n"
+            + "            "+className+"MgmtService.add"+uptableName+"($scope.modal)\n"
+            + "            .then(function successCallback(response) {\n"
+            + "              toaster.pop({\n"
+            + "                type: response.data.code == 200 ? '新增成功' : '新增失败',\n"
+            + "                title: '提示信息',\n"
+            + "                body: response.data.message,\n"
+            + "                showCloseButton: true,\n"
+            + "                timeout: 5000\n"
+            + "              });\n"
+            + "              if (response.data.code == 200) {\n"
+            + "                opener.dtInstance.reloadData();\n"
+
+
+            + "                $uibModalInstance.close();\n"
+            + "              }\n"
+            + "            });\n"
+            + "          };\n"
+            + "\n"
+            + "        },\n"
+            + "        windowClass: 'animated bounceIn'\n"
+            + "      });\n"
+
+            + "    }";
+
+        return ss;
+    }
+    public static String getFileContent(String className, String prefixClassPackage, TableMeta meta,
+        String tablepath,String tablemodelpath) throws
+        ServiceException {
         String tableName = Tools.lineToHump(meta.getTableName());
         String uptableName = Tools.upCaptureName(tableName);
 
@@ -112,11 +154,12 @@ public class AugularListControllerFormat {
 
             + "    $scope.add"+uptableName+" = function () {\n"
             +"         alert('进入新增')"
+            +getAddJsFunction( meta, className, uptableName,  tablepath, tablemodelpath)
+
             + "    }\n"
             + "\n"
             + "    $scope.edit"+uptableName+"  = function (id) {\n"
             +"         alert('进入编辑')"
-
             + "    }\n"
             + "\n"
             + "    $scope.view"+uptableName+"  = function (id) {\n"
