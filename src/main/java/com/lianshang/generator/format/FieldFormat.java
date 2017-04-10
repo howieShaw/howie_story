@@ -128,9 +128,9 @@ public class FieldFormat {
 
         switch (columnType) {
             case BOOl:
-                return "Boolean";
+                return "Integer";
             case BYTE:
-                return "Byte";
+                return "Integer";
             case INT:
                 return "Integer";
             case BIGINT:

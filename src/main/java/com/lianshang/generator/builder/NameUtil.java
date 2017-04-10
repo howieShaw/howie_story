@@ -1,6 +1,7 @@
 package com.lianshang.generator.builder;
 
 import com.lianshang.generator.meta.TableMeta;
+import com.lianshang.generator.util.Tools;
 
 /**
  * Created by walker on 16/2/17.
@@ -39,5 +40,20 @@ public class NameUtil {
     public static String getServiceTestClassName(TableMeta meta) {
 
         return meta.getPrefixName() + "ServiceTest";
+    }
+
+    public static String getHtmlName(TableMeta meta) {
+
+        return Tools.lineToHump(meta.getTableName()) + ".html";
+    }
+
+    public static String getClassName(TableMeta meta) {
+
+        return Tools.lineToHump(meta.getTableName());
+    }
+    public static String getAugularControllerName(TableMeta meta) {
+
+        return Tools.lineToHump(meta.getTableName()) + ".controller.js"
+            + "";
     }
 }
