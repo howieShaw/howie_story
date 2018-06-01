@@ -90,6 +90,30 @@ public class SLinkList<T> {
         return result;
     }
 
+    public void printLink () {
+        if (top == null || size <=0) {
+            return;
+        }
+        int index = 0;
+        SNode temp = top;
+        while (temp != null) {
+            System.out.println("index : "+index+" , data : "+temp.data);
+            temp = temp.next;
+            index++;
+        }
+    }
 
+    public static void main(String[] args) {
+        SNode<Integer> sNode = new SNode<Integer>();
+        sNode.data = 1;
+        SLinkList<Integer> sLinkList = new SLinkList<Integer>(sNode);
+        sLinkList.add(new SNode<Integer>(2,null));
+        sLinkList.add(new SNode<Integer>(3,null));
+        sLinkList.add(new SNode<Integer>(4,null));
+
+        System.out.println("get 4 :"+sLinkList.getSNode(4));
+
+        sLinkList.printLink();
+    }
 
 }
