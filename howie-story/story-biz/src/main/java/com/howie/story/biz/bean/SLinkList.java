@@ -1,8 +1,4 @@
-package com.howie.story.biz.process;
-
-import com.howie.story.biz.bean.SNode;
-
-import javax.net.ssl.SNIHostName;
+package com.howie.story.biz.bean;
 
 /**
  * @Author:xiaohaoyun
@@ -17,7 +13,7 @@ public class SLinkList<T> {
 
     public SLinkList (SNode<T> top) {
         this.top = top;
-        this.current = this.top;
+        this.current =top;
         size = 1;
     }
 
@@ -26,8 +22,12 @@ public class SLinkList<T> {
             System.out.println("~~添加node 信息为空");
             return;
         }
+        if (top == current) {
+            top.next = current;
+        }
         current.next = node;
         current = current.next;
+
         size++;
     }
 
