@@ -51,7 +51,7 @@ public class BaseViewServiceImpl implements BaseViewService {
     public static void main(String[] args) {
 
         BaseViewService baseViewService = new BaseViewServiceImpl();
-        System.out.println(baseViewService.strToInteger("-123"));
+        System.out.println(baseViewService.strToInteger("123"));
 
         System.out.println(Integer.valueOf("-234"));
     }
