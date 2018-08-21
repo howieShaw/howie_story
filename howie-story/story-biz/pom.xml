@@ -89,15 +89,21 @@
         </dependency>
 
         <!--log4j-->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>slf4j-api</artifactId>-->
+            <!--<version>${log4j.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>slf4j-log4j12</artifactId>-->
+            <!--<version>${log4j.version}</version>-->
+        <!--</dependency>-->
+
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${log4j.version}</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
         </dependency>
 
         <dependency>
@@ -106,10 +112,31 @@
             <version>4.1</version>
         </dependency>
 
+        <!--邮件-->
+        <!-- Apache Mail begin -->
         <dependency>
             <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.4</version>
+            <artifactId>commons-email</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <!-- Apache Mail end -->
+
+        <!--tess4j 图片识别-->
+        <dependency>
+            <groupId>net.sourceforge.tess4j</groupId>
+            <artifactId>tess4j</artifactId>
+            <version>3.3.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sun.jna</groupId>
+                    <artifactId>jna</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>4.3.0</version>
         </dependency>
 
     </dependencies>

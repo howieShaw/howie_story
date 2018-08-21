@@ -4,6 +4,8 @@ import com.howie.story.api.service.view.BaseViewService;
 import com.howie.story.biz.util.CommonUtils;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * @Author:xiaohaoyun
  * @Description：
@@ -48,12 +50,20 @@ public class BaseViewServiceImpl implements BaseViewService {
         return negative ? -result : result;
     }
 
+    public Integer incrementNumber(int number,int count) {
+        AtomicInteger atomicInteger = new AtomicInteger(number);
+        int index =0;
+        while (index < count) {
+            atomicInteger.incrementAndGet();
+        }
+        return atomicInteger.get();
+    }
+
+
+
     public static void main(String[] args) {
 
-        BaseViewService baseViewService = new BaseViewServiceImpl();
-        System.out.println(baseViewService.strToInteger("123"));
 
-        System.out.println(Integer.valueOf("-234"));
     }
 
 

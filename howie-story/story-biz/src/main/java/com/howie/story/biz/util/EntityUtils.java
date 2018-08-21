@@ -7,4 +7,22 @@ package com.howie.story.biz.util;
  * @Modified by:xiaohaoyun
  */
 public class EntityUtils {
+
+    public static void main(String[] args) {
+        EntityUtils utils = new EntityUtils();
+        System.out.println(utils.inx());
+    }
+
+    private int inx() {
+        int x;
+        try {
+            x = 2;
+            return x;
+        } catch (Exception e) {
+            x = 3;
+            return x;
+        } finally {
+            x =4;
+        }
+    }
 }
