@@ -10,7 +10,8 @@ public class SortUtil {
 
     public static void main(String[] args) {
         int[] arr = {8,9,7,6,5,3,4,2,1};
-        arr = insertSort(arr);
+//        arr = insertSort(arr);
+        quickSort(0,arr.length-1,arr);
         BaseUtil.traversArr(arr);
     }
 
@@ -81,6 +82,49 @@ public class SortUtil {
         }
 
         return arr;
+
+    }
+
+    /**
+     *  快速排序
+     * @param arr
+     * @return
+     */
+    public static void quickSort(int left,int right,int[] arr) {
+        if (left>right) {
+            return;
+        }
+
+        int base = arr[left];
+
+        int pre = left;
+        int last = right;
+
+        while (pre != last) {
+            //必先从后往前找比基准值小的数，保证last 在一轮查找至始至终比pre 大
+            while (arr[last] >= base && pre < last) {
+                last--;
+            }
+
+            //再从前往后找比基准值大的数
+            while (arr[pre]<= base && pre < last) {
+                pre++;
+            }
+
+
+            if (pre < last) {
+                int temp = arr[pre];
+                arr[pre] = arr[last];
+                arr[last] = temp;
+            }
+
+        }
+        // 最终pre = last 在中间位置相遇，交换基数的位置，这样pre 就是基数在排序中该有的位置
+        arr[left] = arr[pre];
+        arr[pre] = base;
+        //将基数值
+        quickSort(left,pre-1,arr);
+        quickSort(pre+1,right,arr);
 
     }
 

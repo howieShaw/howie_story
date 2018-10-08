@@ -1,5 +1,7 @@
 package com.howie.story.biz.util;
 
+import com.howie.story.api.bean.SNode;
+
 /**
  * @Author:xiaohaoyun
  * @Description：
@@ -24,5 +26,18 @@ public class BaseUtil {
 
         }
 
+    }
+
+    public static void traversSNode (SNode sNode) {
+        if (sNode == null) {
+            return;
+        }
+
+        while (sNode.next !=null) {
+            System.out.print(sNode.data+"->");
+            sNode = sNode.next;
+        }
+        System.out.println(sNode.data);
+        System.out.println();
     }
 }

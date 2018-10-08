@@ -1,7 +1,7 @@
 package com.howie.story.biz.util;
 
-import com.howie.story.biz.bean.SLinkList;
-import com.howie.story.biz.bean.SNode;
+import com.howie.story.api.bean.SLinkList;
+import com.howie.story.api.bean.SNode;
 
 /**
  * @Author:xiaohaoyun
@@ -51,5 +51,16 @@ public class NodeUtils {
             }
             top =top.next;
         }
+    }
+
+    public static SNode<Integer> createSNode (int val) {
+        SLinkList<Integer> sLinkList = new SLinkList<Integer>(new SNode<Integer>(val,null));
+        while (val >0){
+            --val;
+            sLinkList.add(new SNode<Integer>(val,null));
+        }
+
+        return sLinkList.top;
+
     }
 }
