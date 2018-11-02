@@ -1,7 +1,7 @@
 package com.howie.story.biz.util;
 
-import java.io.Reader;
-import java.io.StringReader;
+
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * @Author:xiaohaoyun
@@ -10,8 +10,18 @@ import java.io.StringReader;
  * @Modified by:xiaohaoyun
  */
 public class TestUtil {
+
+    private long L = 0;
+
     public static void main(String[] args) {
-        Reader reader = new StringReader("");
 
     }
+
+    public void changeLong (long aLong) {
+        this.L = aLong;
+    }
+
+
+
+
 }
