@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c674c4e7-ce1b-44b0-91db-6eeaed31af90" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/annotation/TableColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TableRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/dto/TableElementEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/dto/TableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/dto/TableRowEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/dto/TableTop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/enums/ColorEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/util/HtmlUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java_OCR" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_OCR" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tess4jtest" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess4jtest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/story_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/story_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/story-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/story-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/story-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/story-biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/story-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/story-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-web/story-web.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/story-web/target/" />
     <ignored path="$PROJECT_DIR$/story-api/target/" />
@@ -39,6 +20,7 @@
     <session id="366088989">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -125,8 +107,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/util/HtmlUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="300">
+              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -648,7 +633,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541127950679" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541144921891" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -749,18 +734,18 @@
       <workItem from="1541038773465" duration="828000" />
       <workItem from="1541072549909" duration="534000" />
       <workItem from="1541124532549" duration="413000" />
-      <workItem from="1541127081076" duration="872000" />
+      <workItem from="1541127081076" duration="1953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4167000" />
+    <option name="totallyTimeSpent" value="5248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -778,7 +763,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -893,8 +878,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/util/HtmlUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="300">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
