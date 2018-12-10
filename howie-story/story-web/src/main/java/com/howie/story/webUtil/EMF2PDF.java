@@ -38,7 +38,7 @@ public class EMF2PDF {
 
             System.out.println("widht = " + width + " and height = " + height);
             final BufferedImage result = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-            Graphics2D g2 = (Graphics2D)result.createGraphics();
+            Graphics2D g2 = result.createGraphics();
             emfRenderer.paint(g2);
 
             // write it as png/jpg/gif, up to you!!!
