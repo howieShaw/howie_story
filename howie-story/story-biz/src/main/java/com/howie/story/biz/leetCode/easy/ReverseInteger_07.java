@@ -13,20 +13,21 @@ public class ReverseInteger_07 {
      */
     public static void main(String[] args) {
 //        System.out.println((-143%100)/10);
-        System.out.println(myReverseInteger(-14378));
+        System.out.println(myReverseInteger(2147483641));
     }
     public static int myReverseInteger(Integer num){
-        int reverseNum = 0;
+        Long reverseNum = 0L;
         while (num !=0 ) {
-            if(reverseNum > Integer.MAX_VALUE || reverseNum < Integer.MIN_VALUE) {
+            if(reverseNum >= Integer.MAX_VALUE || reverseNum <= Integer.MIN_VALUE) {
                 System.out.println("反转数超出整型范围");
-                return -1;
+                return 0;
             }
+
             int subNum = num % 10 ;
-            reverseNum = reverseNum * 10 + subNum;
+            reverseNum = reverseNum * 10+subNum;
             num = num/10;
         }
-        return reverseNum;
+        return reverseNum.intValue();
     }
 
 }

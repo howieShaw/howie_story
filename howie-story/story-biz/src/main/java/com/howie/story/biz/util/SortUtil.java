@@ -20,7 +20,7 @@ public class SortUtil {
      * @param arr
      * @return
      */
-    public static int[] searchSort (int[] arr) {
+    public static int[] chooseSort (int[] arr) {
         if (arr  == null || arr.length <= 0) {
             System.out.println("~~数组为空");
             return arr;
@@ -127,6 +127,10 @@ public class SortUtil {
         quickSort(pre+1,right,arr);
 
     }
+
+    /**
+     * 桶排序：
+     */
 
 
 

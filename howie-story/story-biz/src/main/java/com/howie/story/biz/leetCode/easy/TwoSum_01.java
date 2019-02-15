@@ -23,8 +23,8 @@ public class TwoSum_01 extends Base {
      */
 
     public static void main(String[] args) {
-        int[] arr = {3,2,5,6,1,9,12,34,13,21};
-        int target = 10;
+        int[] arr = {-3,4,3,90};
+        int target = 0;
         int[] result = myTwoSum(arr,target);
         traversal(result);
     }
