@@ -1,5 +1,7 @@
 package com.howie.story.biz.util;
 
+import com.howie.story.api.bean.SNode;
+
 /**
  * @Author:xiaohaoyun
  * @Description： 排序算法
@@ -9,10 +11,36 @@ package com.howie.story.biz.util;
 public class SortUtil {
 
     public static void main(String[] args) {
-        int[] arr = {8,9,7,6,5,3,4,2,1};
+//        int[] arr = {8,9,7,6,5,3,4,2,1};
 //        arr = insertSort(arr);
-        quickSort(0,arr.length-1,arr);
-        BaseUtil.traversArr(arr);
+//        quickSort(0,arr.length-1,arr);
+
+        int[] arr = bucketSort(mockSnode(),5);
+//        BaseUtil.traversArr(arr);
+    }
+
+    private static SNode<Integer>[] mockSnode () {
+        SNode[] sNodes = new SNode[9];
+        SNode<Integer> node1 = new SNode<Integer>(10,null);
+        sNodes[0] = node1;
+        SNode<Integer> node2 = new SNode<Integer>(19,null);
+        sNodes[1] = node2;
+        SNode<Integer> node3 = new SNode<Integer>(8,null);
+        sNodes[2] = node3;
+        SNode<Integer> node4 = new SNode<Integer>(15,null);
+        sNodes[3] = node4;
+        SNode<Integer> node5 = new SNode<Integer>(13,null);
+        sNodes[4] = node5;
+        SNode<Integer> node6 = new SNode<Integer>(21,null);
+        sNodes[5] = node6;
+        SNode<Integer> node7 = new SNode<Integer>(17,null);
+        sNodes[6] = node7;
+        SNode<Integer> node8 = new SNode<Integer>(28,null);
+        sNodes[7] = node8;
+        SNode<Integer> node9 = new SNode<Integer>(39,null);
+        sNodes[8] = node9;
+
+        return sNodes;
     }
 
     /**
@@ -129,9 +157,81 @@ public class SortUtil {
     }
 
     /**
-     * 桶排序：
+     * 桶排序：传入一个数组和一个桶大小的参数，通过数组中最大值和最小值计算每个桶存放数据的范围：（max-min+1）/桶数量。
      */
 
+    public static int[] bucketSort(SNode<Integer>[] arr, int bucketNum) {
+        int len = arr.length;
+
+        if (bucketNum <= 0) {
+            bucketNum = 10;
+        }
+
+        int min = arr[0].data;
+        int max = arr[0].data;
+        //找出数组中的最小值和最大值
+        for (int i = 0;i<len;i++) {
+            min = Math.min(arr[i].data,min);
+            max = Math.max(arr[i].data,max);
+        }
+
+        //计算每个桶的容量空间，
+        int space = (int)Math.ceil((max-min)/bucketNum)+1;
+        SNode<Integer>[] buckets = new SNode[bucketNum];
+
+        for (int j =0;j < len; j++) {
+            int data = arr[j].data;
+            //计算值应该在哪个桶内
+            int index = (int)Math.floor((data - min)/space);
+            SNode<Integer> sNode = buckets[index];
+            if (sNode == null) {
+                //桶内没有数据，直接赋值
+                buckets[index] = arr[j];
+            } else {
+                //桶里存在值，比较值大小进行排序
+                if (sNode.data >=arr[j].data) {
+                    //桶里的第一个值比新值大，排在新值后面
+                    arr[j].next = sNode;
+                    buckets[index] = arr[j];
+                } else  {
+                    //桶里的第一个值比新值笑，遍历链表找到值比新值大的进行排序，没有新值就排在最后
+                    SNode<Integer> afterNode = sNode.next;
+                    SNode<Integer> pre = sNode;
+                    while (afterNode != null) {
+                        if (afterNode.data >= arr[j].data) {
+                            pre.next = arr[j];
+                            arr[j].next = afterNode;
+                            break;
+                        } else {
+                            pre = afterNode;
+                            afterNode = afterNode.next;
+                        }
+                    }
+                    pre.next = arr[j];
+                }
+            }
+
+        }
+
+        //打印桶里的值
+        int[] dataArr = new int[len];
+        int index = 0;
+        for (int i =0, buckLen = buckets.length;i <buckLen;i++) {
+            SNode<Integer> node = buckets[i];
+            while (node != null) {
+                dataArr[index] = node.data;
+                System.out.print(node.data+"-");
+                node = node.next;
+                index++;
+            }
+        }
+
+        return dataArr;
+    }
+
+    public void heapSort (int[] arr) {
+
+    }
 
 
 
