@@ -1,4 +1,4 @@
-package com.howie.story.api.bean.response;
+package com.howie.story.api.bean.node;
 
 /**
  * @Author:xiaohaoyun

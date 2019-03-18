@@ -11,12 +11,13 @@ import com.howie.story.api.bean.SNode;
 public class SortUtil {
 
     public static void main(String[] args) {
-//        int[] arr = {8,9,7,6,5,3,4,2,1};
+        int[] arr = {8,9,7,6,5,3,4,2};
 //        arr = insertSort(arr);
 //        quickSort(0,arr.length-1,arr);
 
-        int[] arr = bucketSort(mockSnode(),5);
-//        BaseUtil.traversArr(arr);
+//        int[] arr = bucketSort(mockSnode(),5);
+        heapSort(arr);
+        BaseUtil.traversArr(arr);
     }
 
     private static SNode<Integer>[] mockSnode () {
@@ -229,9 +230,68 @@ public class SortUtil {
         return dataArr;
     }
 
-    public void heapSort (int[] arr) {
+    public static void heapSort (int[] arr) {
+
+        //将数组建立为初始堆，这里为什么是length/2 因为，
+        for (int i = arr.length/2;i>=0;i--) {
+            buildHeapDown(arr,i,arr.length);
+        }
+
+        //开始取出堆顶的值，将堆顶和堆位的值进行交换，重新进行堆变换
+        for (int i = arr.length -1;i>=0;i--) {
+            BaseUtil.swap(arr,0,i);
+
+            buildHeapDown(arr,0,i);
+
+        }
+    }
+
+    /**
+     *
+     * @param arr 重上往下构建堆
+     * @param parent
+     * @param len
+     */
+    public static void buildHeapDown (int[] arr,int parent,int len) {
+        int parentValue = arr[parent];//先保持父节点的值
+        int childIndex = 2*parent+1;//先查看左节点
+
+        while (childIndex < len) {
+            int rightIndex = childIndex +1;
+            //如果右节点存在，且右节点的值比左节点大，则先匹配右节点
+            if (rightIndex <len && arr[childIndex] < arr[rightIndex]) {
+                childIndex = rightIndex;
+            }
+            //如果父节点的值比子节点的大，则直接终止
+            if (parentValue > arr[childIndex]) {
+                break;
+            }
+
+            //到这里证明父节点的值比子节点的小，将子节点的值往父节点移动,将子节点移动到下一个左节点
+            arr[parent] = arr[childIndex];
+//            arr[childIndex] = parentValue;
+            parent = childIndex;
+            childIndex = 2*childIndex+1;
+
+        }
+        //替换父节点的值。
+        arr[parent] = parentValue;
 
     }
+
+    /**
+     *
+     * @param arr 一个无序数组
+     * @param k 数组中K个最大大数
+     * @return 返回数组中K个最大大数
+     */
+    public int[] topK(int[] arr,int k) {
+
+
+        return null;
+    }
+
+
 
 
 
