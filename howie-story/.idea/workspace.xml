@@ -5,31 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d20d9f-9fc4-44b2-a957-c58577098f78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/api/QueueApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/api/StackApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Hard/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/FeiBoLaQie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MergeSortList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/TopK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/node/ArrayQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/META-INF/story-biz.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Hard/LRUCache$CacheNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Hard/LRUCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/LRUCache$CacheNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/LRUCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintEVEN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintODD.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/ArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/response/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/BaseResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/MyStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/ReverseNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/ReverseNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/BaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/BaseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/BaseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/BaseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SortUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/response/ArrayQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/response/BaseResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/node/BaseResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/other/FeiBoLaQie.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/FeiBoLaQie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/other/MediaNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MediaNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/other/MergeSortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MergeSortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/other/TopK.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/TopK.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/story-web/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,20 +52,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRUCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="210">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/TopK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Hard/LRUCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="165">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,34 +92,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="302" column="6" selection-start-line="302" selection-start-column="6" selection-end-line="302" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="278" column="17" selection-start-line="278" selection-start-column="17" selection-end-line="278" selection-end-column="17" />
-              <folding>
-                <element signature="e#19228#19229#0" expanded="true" />
-                <element signature="e#19311#19312#0" expanded="true" />
-                <element signature="e#24218#24219#0" expanded="true" />
-                <element signature="e#24283#24284#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XTree.java">
+        <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -113,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/DNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -121,8 +112,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <folding>
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,8 +156,8 @@
     <findStrings>
       <find>put(</find>
       <find>ThreadPoolExecutor</find>
-      <find>Node</find>
       <find>V&gt;</find>
+      <find>Node</find>
     </findStrings>
     <replaceStrings>
       <replace>Integer&gt;</replace>
@@ -196,12 +191,15 @@
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/other/MediaNum.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRU.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XTree.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LruCache.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRUCache.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Hard/LRUCatch.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Hard/LRUCache.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XTree.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XTreeNode.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java" />
       </list>
     </option>
   </component>
@@ -218,8 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,6 +277,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
@@ -397,46 +404,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="process" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
-              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
-              <item name="story-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
-              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
-              <item name="story-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
-              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
-              <item name="story-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
-              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
-              <item name="story-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
               <item name="worker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -508,12 +475,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552913148576" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552924246095" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -534,7 +503,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MediaNum">
+  <component name="RunManager" selected="Application.PrintOddAndEven">
     <configuration name="FeiBoLaQie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.FeiBoLaQie" />
       <module name="story-biz" />
@@ -561,8 +530,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.MergeSortList" />
+    <configuration name="PrintOddAndEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.PrintOddAndEven" />
       <module name="story-biz" />
       <extension name="coverage">
         <pattern>
@@ -602,11 +571,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintOddAndEven" />
         <item itemvalue="Application.MediaNum" />
         <item itemvalue="Application.TopK" />
         <item itemvalue="Application.SortUtil" />
         <item itemvalue="Application.FeiBoLaQie" />
-        <item itemvalue="Application.MergeSortList" />
       </list>
     </recent_temporary>
   </component>
@@ -631,18 +600,19 @@
       <workItem from="1552237958886" duration="3140000" />
       <workItem from="1552377869514" duration="11149000" />
       <workItem from="1552600696877" duration="8625000" />
-      <workItem from="1552792247401" duration="9961000" />
+      <workItem from="1552792247401" duration="11331000" />
+      <workItem from="1552921009174" duration="1158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69299000" />
+    <option name="totallyTimeSpent" value="71827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2932761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -913,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/TopK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/RemoveDuplicatesFromSortedArray_26.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -962,6 +925,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="302" column="6" selection-start-line="302" selection-start-column="6" selection-end-line="302" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="278" column="17" selection-start-line="278" selection-start-column="17" selection-end-line="278" selection-end-column="17" />
+          <folding>
+            <element signature="e#19228#19229#0" expanded="true" />
+            <element signature="e#19311#19312#0" expanded="true" />
+            <element signature="e#24218#24219#0" expanded="true" />
+            <element signature="e#24283#24284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Hard/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/DNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3870">
@@ -979,71 +997,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/DNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="278" column="17" selection-start-line="278" selection-start-column="17" selection-end-line="278" selection-end-column="17" />
-          <folding>
-            <element signature="e#19228#19229#0" expanded="true" />
-            <element signature="e#19311#19312#0" expanded="true" />
-            <element signature="e#24218#24219#0" expanded="true" />
-            <element signature="e#24283#24284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="302" column="6" selection-start-line="302" selection-start-column="6" selection-end-line="302" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRUCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Hard/LRUCache.java">
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/TopK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
