@@ -13,11 +13,15 @@ public class PrintOddAndEven {
         even.start();
     }
 
-    public synchronized void print(String s) {
+    public synchronized void print(String s,int num) {
         this.notify();
-        System.out.println(s);
+        System.out.println(s+"  num:"+num);
         try {
             this.wait();
+            if (num ==99) {
+                notify();
+            }
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -27,8 +31,12 @@ public class PrintOddAndEven {
 
         public void run() {
             for (int i = 1;i<100;i+=2) {
-                print("ODD:"+i);
+                print("ODD:"+i,i);
+                if (i+2 >=100) {
+                    Thread.interrupted();
+                }
             }
+
         }
     }
 
@@ -36,7 +44,10 @@ public class PrintOddAndEven {
 
         public void run() {
             for (int i= 2; i<100;i+=2) {
-                print("EVEN:"+i);
+                print("EVEN:"+i,i);
+                if (i+2 >=100) {
+                    Thread.interrupted();
+                }
             }
         }
     }

@@ -12,6 +12,7 @@
         <module>story-api</module>
         <module>story-biz</module>
         <module>story-web</module>
+        <module>story-x-spring</module>
     </modules>
 
     <properties>

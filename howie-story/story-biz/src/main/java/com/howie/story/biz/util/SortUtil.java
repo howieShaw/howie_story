@@ -1,6 +1,7 @@
 package com.howie.story.biz.util;
 
 import com.howie.story.api.bean.SNode;
+import com.howie.story.biz.leetCode.Base;
 
 /**
  * @Author:xiaohaoyun
@@ -16,7 +17,8 @@ public class SortUtil {
 //        quickSort(0,arr.length-1,arr);
 
 //        int[] arr = bucketSort(mockSnode(),5);
-        heapSort(arr);
+//        heapSort(arr);
+        mergeSort(arr);
         BaseUtil.traversArr(arr);
     }
 
@@ -291,6 +293,59 @@ public class SortUtil {
         return null;
     }
 
+    /**
+     * `````````归并排序
+     */
+
+    public static void mergeSort(int[] arr) {
+        mergeSort(arr,0,arr.length-1);
+    }
+
+    public static void mergeSort(int[] arr,int left,int right) {
+        if (left >= right) {
+            return;
+        }
+        int mid = (left+right)/2;
+        mergeSort(arr,left,mid);//左边归并排序，使得左子序列有序
+        mergeSort(arr,mid+1,right);//右边归并排序，使得右子序列有序
+        mergeSort(arr,left,mid,right);//合并两个子序列
+    }
+
+    public static void mergeSort(int[] arr,int left,int mid,int right) {
+        if (left > right) {
+            return;
+        }
+
+        int low = left;
+        int rStart = mid+1;
+        int index = 0;
+        int lIndex = left;
+        int[] temp = new int[arr.length];
+
+        while (low < mid && rStart <right) {
+            if (arr[left] <= arr[rStart]) {
+                temp[index++] = arr[low++];
+            } else {
+                temp[index++] = arr[rStart++];
+            }
+        }
+
+        while (low < mid) {
+            temp[index++] = arr[low++];
+        }
+
+        while (rStart < right) {
+            temp[index++] = arr[rStart++];
+        }
+
+        //将临时数组的数据全拷贝到原数组
+        //从临时数组拷贝到原数组
+        while(lIndex<=right){
+            arr[lIndex]=temp[lIndex];
+            lIndex++;
+        }
+
+    }
 
 
 

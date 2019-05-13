@@ -9,6 +9,7 @@
         <module name="story-api" />
         <module name="story-biz" />
         <module name="story-web" />
+        <module name="story-x-spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="story-api" target="1.8" />
       <module name="story-biz" target="1.5" />
       <module name="story-web" target="1.8" />
+      <module name="story-x-spring" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

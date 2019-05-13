@@ -10,6 +10,8 @@ public class FeiBoLaQie {
         System.out.println("递归方法："+recursion(n));
 
         System.out.println("forMethod:"+forMethod(n));
+
+        System.out.println("forMethod1:"+forMethod1(n));
     }
 
     /**
@@ -47,6 +49,22 @@ public class FeiBoLaQie {
         int y = 2;
         int t = 0;
         for (int i=3;i<=n;i++) {
+            t = x +y;
+            x = y;
+            y = t;
+        }
+
+        return t;
+    }
+
+    public static int forMethod1(int n) {
+        if (n <=2) {
+            return n;
+        }
+        int x = 1;
+        int y = 2;
+        int t = 0;
+        while (x<n) {
             t = x +y;
             x = y;
             y = t;

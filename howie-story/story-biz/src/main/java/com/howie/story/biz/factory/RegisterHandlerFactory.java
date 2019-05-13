@@ -1,5 +1,8 @@
 package com.howie.story.biz.factory;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * @Author:xiaohaoyun
  * @Description： 处理器工厂
@@ -7,6 +10,9 @@ package com.howie.story.biz.factory;
  * @Modified by:xiaohaoyun
  */
 public class RegisterHandlerFactory {
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("");
+    }
 
 
 }

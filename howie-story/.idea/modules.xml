@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/story-api/story-api.iml" filepath="$PROJECT_DIR$/story-api/story-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/story-biz/story-biz.iml" filepath="$PROJECT_DIR$/story-biz/story-biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/story-web/story-web.iml" filepath="$PROJECT_DIR$/story-web/story-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/story-x-spring/story-x-spring.iml" filepath="$PROJECT_DIR$/story-x-spring/story-x-spring.iml" />
     </modules>
   </component>
 </project>
