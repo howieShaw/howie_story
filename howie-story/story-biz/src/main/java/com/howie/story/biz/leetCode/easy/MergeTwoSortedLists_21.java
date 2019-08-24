@@ -1,61 +1,62 @@
-//package com.howie.story.biz.leetCode.easy;
-//
-//import com.howie.main.construstor.Node;
-//import com.howie.main.construstor.SingleLinkList;
-//
-///**
-// * Created by henry_shawn on 2017/4/15.
-// */
-//public class MergeTwoSortedLists_21 {
-//    /**
-//     * Merge two sorted linked lists and return it as a new list. The new list should be made by
-//     * splicing together the nodes of the first two lists.
-//     */
-//
-//    public static void main(String[] args) {
-//        SingleLinkList<Integer> linkList1 = new SingleLinkList<>();
-//        linkList1.addTopNode(1);
-//        linkList1.addTailNode(3);
-//        linkList1.addTailNode(5);
-//        linkList1.addTailNode(7);
-//        linkList1.addTailNode(9);
-//        linkList1.addTailNode(11);
-//
-//        SingleLinkList<Integer> linkList2 = new SingleLinkList<>();
-//        linkList2.addTopNode(0);
-//        linkList2.addTailNode(2);
-//        linkList2.addTailNode(4);
-//        linkList2.addTailNode(6);
-//        linkList2.addTailNode(8);
-//        linkList2.addTailNode(10);
-//
-//        Node node = merge(linkList1.getTop(),linkList2.getTop());
-//        while (node != null){
-//            node.display();
-//            node = node.next;
-//        }
-//
-//
-//
-//    }
-//
-//    public static Node merge(Node<Integer> top1,Node<Integer> top2){
-//
-//        if (top1 == null) {
-//            return top1;
-//        }
-//        if (top2 == null) {
-//            return top2;
-//        }
-//        Node<Integer> mergeNode;
-//        if (top1.data.compareTo(top2.data) > 0) {
-//            mergeNode = top2;
-//            mergeNode.next = merge(top1,mergeNode.next);
-//        }else {
-//            mergeNode = top1;
-//            mergeNode.next = merge(mergeNode.next,top2);
-//
-//        }
-//        return mergeNode;
-//    }
-//}
+package com.howie.story.biz.leetCode.easy;
+
+import com.howie.story.api.bean.SLinkList;
+import com.howie.story.api.bean.SNode;
+
+/**
+ * Created by henry_shawn on 2017/4/15.
+ */
+public class MergeTwoSortedLists_21 {
+    /**
+     * Merge two sorted linked lists and return it as a new list. The new list should be made by
+     * splicing together the nodes of the first two lists.
+     */
+
+    public static void main(String[] args) {
+        SNode<Integer> top = new SNode<Integer>(1,null);
+        SLinkList<Integer> linkList1 = new SLinkList<Integer>(top);
+
+        linkList1.add(new SNode<Integer>(3));
+        linkList1.add(new SNode<Integer>(5));
+        linkList1.add(new SNode<Integer>(7));
+        linkList1.add(new SNode<Integer>(9));
+        linkList1.add(new SNode<Integer>(11));
+
+        SNode<Integer> top2 = new SNode<Integer>(1,null);
+        SLinkList<Integer> linkList2 = new SLinkList<Integer>(top2);
+        linkList2.add(new SNode<Integer>(2,null));
+        linkList2.add(new SNode<Integer>(4));
+        linkList2.add(new SNode<Integer>(5));
+        linkList2.add(new SNode<Integer>(9));
+        linkList2.add(new SNode<Integer>(10));
+        linkList2.add(new SNode<Integer>(13));
+
+        SNode node = merge(linkList1.top,linkList2.top);
+        while (node != null){
+            node = node.next;
+        }
+
+
+
+    }
+
+    public static SNode merge(SNode<Integer> top1,SNode<Integer> top2){
+
+        if (top1 == null) {
+            return top1;
+        }
+        if (top2 == null) {
+            return top2;
+        }
+        SNode<Integer> mergeNode;
+        if (top1.data.compareTo(top2.data) > 0) {
+            mergeNode = top2;
+            mergeNode.next = merge(top1,mergeNode.next);
+        }else {
+            mergeNode = top1;
+            mergeNode.next = merge(mergeNode.next,top2);
+
+        }
+        return mergeNode;
+    }
+}

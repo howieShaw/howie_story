@@ -16,6 +16,11 @@ public class SLinkList<T> {
         this.current =top;
         size = 1;
     }
+    public SLinkList () {
+        this.top = null;
+        this.current =top;
+        size = 0;
+    }
 
     public void add (SNode<T> node) {
         if (node == null) {

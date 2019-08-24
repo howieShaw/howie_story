@@ -17,8 +17,8 @@ public class SortUtil {
 //        quickSort(0,arr.length-1,arr);
 
 //        int[] arr = bucketSort(mockSnode(),5);
-//        heapSort(arr);
-        mergeSort(arr);
+        heapSort(arr);
+//        mergeSort(arr);
         BaseUtil.traversArr(arr);
     }
 
@@ -276,7 +276,7 @@ public class SortUtil {
             childIndex = 2*childIndex+1;
 
         }
-        //替换父节点的值。
+        //这里的parent已经是原来父节点的子结点了，这里将原来父节点的值赋值到数字该到到位置。
         arr[parent] = parentValue;
 
     }

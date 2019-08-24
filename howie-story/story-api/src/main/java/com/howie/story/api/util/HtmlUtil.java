@@ -165,9 +165,9 @@ public class HtmlUtil {
         }
 
         TableEntity table = new TableEntity();
-        Map<String,TableTop> tops = new LinkedHashMap<>();
+        Map<String,TableTop> tops = new LinkedHashMap<String,TableTop>();
 
-        List<TableRowEntity> rowEntities = new ArrayList<>();
+        List<TableRowEntity> rowEntities = new ArrayList<TableRowEntity>();
         boolean buildTop = false;
         int row = 1;
         Map<String,Object> foot = null;
@@ -176,7 +176,7 @@ public class HtmlUtil {
             Field.setAccessible(fields,true);
             TableRowEntity rowEntity = new TableRowEntity();
             rowEntity.setRow(row++);
-            Map<String,TableElementEntity> entityMap = new HashMap<>();
+            Map<String,TableElementEntity> entityMap = new HashMap<String,TableElementEntity>();
             for (int i=0;i < fields.length; i++) {
                 Field field = fields[i];
 
@@ -202,7 +202,7 @@ public class HtmlUtil {
 
                 if (tableColumn.needTotal()) {
                     if (foot == null) {
-                        foot = new HashMap<>();
+                        foot = new HashMap<String,Object>();
                     }
                     if (foot.containsKey(tableColumn.columnKey())) {
                         Object obj = foot.get(tableColumn.columnKey());
@@ -248,7 +248,7 @@ public class HtmlUtil {
 
     public static List<TableTop> getTableTop (String classPath) throws ClassNotFoundException {
         Field[] fields = Class.forName(classPath).getFields();
-        List<TableTop> tops = new ArrayList<>();
+        List<TableTop> tops = new ArrayList<TableTop>();
         for (Field field : fields) {
             TableTop top = TableTop.newTableTop(field.getName(),"",WIDTH_PX);
             tops.add(top);

@@ -11,7 +11,7 @@ public class XBinaryTree {
 
 
     public boolean insert(int val) {
-        TreeNode<Integer> node = new TreeNode<>(val,null,null);
+        TreeNode<Integer> node = new TreeNode<Integer>(val,null,null);
 
         if (root == null) {
             root = node;
@@ -87,19 +87,19 @@ public class XBinaryTree {
 
     /**
      *
-     * @return 深度优先遍历,前序遍历
+     * @return 深度优先遍历,前序遍历 遍历顺序是根左右
      */
     public List<Integer> traverseDepthFirst () {
         return traverseDepthFirst(root);
     }
 
     private List<Integer> traverseDepthFirst (TreeNode<Integer> node) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
         if (node == null) {
             return list;
         }
 
-        Stack<TreeNode<Integer>> stack = new Stack<>();
+        Stack<TreeNode<Integer>> stack = new Stack<TreeNode<Integer>>();
         stack.push(node);
         while (!stack.empty()) {
             TreeNode<Integer> treeNode = stack.pop();
@@ -128,12 +128,12 @@ public class XBinaryTree {
     }
 
     private List<Integer> traverseBreadthFirst(TreeNode<Integer> root) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
         if (root == null) {
             return list;
         }
 
-        Queue<TreeNode<Integer>> queue = new LinkedList<>();
+        Queue<TreeNode<Integer>> queue = new LinkedList<TreeNode<Integer>>();
         queue.offer(root);
         while (!queue.isEmpty()) {
             TreeNode<Integer> treeNode = queue.poll();
@@ -156,17 +156,17 @@ public class XBinaryTree {
     }
 
     /**
-     *  非递归中序遍历
+     *  非递归中序遍历 左 根 右
      * @param root
      * @return
      */
     public List<Integer> traverseMidList (TreeNode<Integer> root) {
-        List<Integer> list =new ArrayList<>();
+        List<Integer> list =new ArrayList<Integer>();
 
         if (root == null) {
             return null;
         }
-        Stack<TreeNode<Integer>> stack = new Stack<>();
+        Stack<TreeNode<Integer>> stack = new Stack<TreeNode<Integer>>();
         stack.push(root);
         while (!stack.empty()) {
             TreeNode<Integer> treeNode = stack.peek();
@@ -192,12 +192,12 @@ public class XBinaryTree {
      * @return
      */
     public List<Integer> traverseAfter (TreeNode<Integer> node) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
         if (node == null) {
             return list;
         }
 
-        Stack<TreeNode<Integer>> stack = new Stack<>();
+        Stack<TreeNode<Integer>> stack = new Stack<TreeNode<Integer>>();
 
         stack.push(node);
         while (!stack.empty()) {

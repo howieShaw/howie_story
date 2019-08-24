@@ -6,12 +6,12 @@ public class TreeNode<T> {
     private TreeNode<T> right;
     private T val;
 
-    TreeNode (T val,TreeNode<T> left,TreeNode<T> right) {
+    public TreeNode (T val,TreeNode<T> left,TreeNode<T> right) {
         this.left = left;
         this.right = right;
         this.val = val;
     }
-    TreeNode() {
+    public TreeNode() {
         super();
     }
 

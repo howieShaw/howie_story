@@ -17,4 +17,9 @@ public class SNode<T> {
         this.next = next;
     }
 
+    public SNode(T data) {
+        this.data = data;
+        this.next = null;
+    }
+
 }

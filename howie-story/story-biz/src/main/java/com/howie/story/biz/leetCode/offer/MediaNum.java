@@ -1,6 +1,7 @@
 package com.howie.story.biz.leetCode.offer;
 
 import com.howie.story.biz.leetCode.Base;
+import com.howie.story.biz.util.SortUtil;
 
 /**
  *  题目找出一个数组中的中位数
@@ -11,7 +12,10 @@ public class MediaNum extends Base {
         int[] arr = {8,4,3,2,1,6,7,5};
 
        int mediaNum =  mediaNum(arr);
-        System.out.println("中位数为："+mediaNum);
+       int searchNum = searchMidNum(arr);
+       System.out.println("中位数为："+mediaNum);
+        System.out.println("search mid :"+searchNum);
+
     }
 
     /**
@@ -76,4 +80,25 @@ public class MediaNum extends Base {
         return arr[mid];
 
     }
+
+    /**
+     * 方法二使用 堆排序
+     */
+
+    public static int searchMidNum (int[] arr) {
+        if (arr == null) return -1;
+        if (arr.length <2) return arr[0];
+
+        for (int i =0;i < arr.length/2;i++) {
+            SortUtil.buildHeapDown(arr,i,arr.length);
+        }
+
+        for (int j =arr.length-1;j != arr.length/2;j--) {
+            swap(arr,0,j);
+            SortUtil.buildHeapDown(arr,0,j);
+        }
+
+        return arr[0];
+    }
+
 }

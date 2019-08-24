@@ -5,56 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d20d9f-9fc4-44b2-a957-c58577098f78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/springweb_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/story_spring_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/story_x_spring_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/story_x_spring_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/concurrent/SemaphoreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/framewoker/UrlRpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/privoder/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/privoder/impl/HelloServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/protocol/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/protocol/http/HttpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/reigster/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-web/src/main/java/com/howie/story/spring/AspectAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-web/src/main/java/com/howie/story/spring/IOCContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-web/src/main/java/com/howie/story/spring/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Design.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/CglibProxy/CglibProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/ProxyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/RealSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/dynamicProxy/DynamicProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/staticProxy/StaticProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/story-x-spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/story_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/story_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/LengthOfLongestSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LinkIntersection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/Perm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/howie-story.iml" beforeDir="false" afterPath="$PROJECT_DIR$/howie-story.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SLinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SLinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/factory/RegisterHandlerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/factory/RegisterHandlerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/FeiBoLaQie.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/FeiBoLaQie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/util/HtmlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/util/HtmlUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/story-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/story-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/target/classes/META-INF/story-api.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/SLinkList.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/SLinkList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/SNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/SNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/bean/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/MergeTwoSortedLists_21.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/MergeTwoSortedLists_21.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story-biz/story-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/story-biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/factory/RegisterHandlerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/factory/RegisterHandlerFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/FeiBoLaQie.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/FeiBoLaQie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintEVEN.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintEVEN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintODD.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintODD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/META-INF/story-biz.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MediaNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MediaNum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SortUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/story-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story-web/story-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-web/story-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-x-spring/story-x-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-x-spring/story-x-spring.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/story-web/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,10 +46,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRUCache.java">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/PalindromeNumber_09.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="510">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/MergeTwoSortedLists_21.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,59 +67,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/RealSubject.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <element signature="e#143#144#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1170">
+              <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/dynamicProxy/DynamicProxy.java">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/Perm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/staticProxy/StaticProxy.java">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LinkIntersection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SLinkList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MergeSortList.java">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Search_a_2D_Matrix_II.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -142,35 +123,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="165">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/TopK.java">
+        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/PicDiscernUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/RemoveDuplicatesFromSortedArray_26.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="180">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -193,6 +159,8 @@
       <find>V&gt;</find>
       <find>Node</find>
       <find>offer</find>
+      <find>TreeNode</find>
+      <find>index</find>
     </findStrings>
     <replaceStrings>
       <replace>Integer&gt;</replace>
@@ -204,21 +172,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/NumberUtil.java" />
-        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/BaseUtil.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/MyStack.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/api/StackApi.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/ArrayStack.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/api/QueueApi.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/response/ArrayQueue.java" />
-        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.java" />
-        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/other/MergeSortList.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/other/FeiBoLaQie.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Base.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/other/TopK.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/ReverseNode.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/other/MediaNum.java" />
-        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRU.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LruCache.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LRUCache.java" />
@@ -243,7 +201,6 @@
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/concurrent/SemaphoreTest.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/FeiBoLaQie.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/SortMerge.java" />
-        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" />
         <option value="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/Subject.java" />
         <option value="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/RealSubject.java" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/privoder/impl/HelloServiceImpl.java" />
@@ -252,9 +209,20 @@
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/reigster/Register.java" />
         <option value="$PROJECT_DIR$/story-biz/pom.xml" />
         <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/protocol/http/HttpService.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" />
-        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java" />
         <option value="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/dynamicProxy/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/util/HtmlUtil.java" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/LengthOfLongestSubstring.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea.vmoptions" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SLinkList.java" />
+        <option value="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SNode.java" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/MergeTwoSortedLists_21.java" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/Perm.java" />
+        <option value="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LinkIntersection.java" />
       </list>
     </option>
   </component>
@@ -265,7 +233,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
@@ -278,8 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,6 +291,58 @@
             <path>
               <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
               <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
               <item name="story-biz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,7 +372,8 @@
               <item name="story-biz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
@@ -362,8 +381,31 @@
               <item name="story-biz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sqlMap" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="leetCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="leetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="easy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="leetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="offer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
@@ -382,6 +424,53 @@
               <item name="story-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="lock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
+              <item name="story-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="webUtil" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
@@ -438,33 +527,19 @@
               <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="designPattern" type="462c0819:PsiDirectoryNode" />
               <item name="Proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
-              <item name="howie-story" type="462c0819:PsiDirectoryNode" />
-              <item name="story-x-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="designPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="Proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="staticProxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="howie-story" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557755646760" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566450535337" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -485,9 +560,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SortUtil">
-    <configuration name="FeiBoLaQie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.FeiBoLaQie" />
+  <component name="RunManager" selected="Application.Perm">
+    <configuration name="LengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.medium.LengthOfLongestSubstring" />
+      <module name="story-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.howie.story.biz.leetCode.medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediaNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.MediaNum" />
       <module name="story-biz" />
       <extension name="coverage">
         <pattern>
@@ -499,8 +587,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintOddAndEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.PrintOddAndEven" />
+    <configuration name="MergeSortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.MergeSortList" />
       <module name="story-biz" />
       <extension name="coverage">
         <pattern>
@@ -512,12 +600,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.howie.story.x.spring.designPattern.Proxy.ProxyTest" />
-      <module name="story-spring" />
+    <configuration name="Perm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.Perm" />
+      <module name="story-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.howie.story.x.spring.designPattern.Proxy.*" />
+          <option name="PATTERN" value="com.howie.story.biz.leetCode.offer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -538,26 +626,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TopK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.leetCode.offer.TopK" />
-      <module name="story-biz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.howie.story.biz.leetCode.offer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Perm" />
         <item itemvalue="Application.SortUtil" />
-        <item itemvalue="Application.TopK" />
-        <item itemvalue="Application.FeiBoLaQie" />
-        <item itemvalue="Application.ProxyTest" />
-        <item itemvalue="Application.PrintOddAndEven" />
+        <item itemvalue="Application.MergeSortList" />
+        <item itemvalue="Application.MediaNum" />
+        <item itemvalue="Application.LengthOfLongestSubstring" />
       </list>
     </recent_temporary>
   </component>
@@ -594,18 +669,30 @@
       <workItem from="1554123615117" duration="5500000" />
       <workItem from="1554173972963" duration="657000" />
       <workItem from="1554895978203" duration="1806000" />
-      <workItem from="1557674510559" duration="2387000" />
+      <workItem from="1557674510559" duration="2580000" />
+      <workItem from="1558429762299" duration="4490000" />
+      <workItem from="1558618646067" duration="9963000" />
+      <workItem from="1565010984133" duration="130000" />
+      <workItem from="1565011342007" duration="9766000" />
+      <workItem from="1565575616526" duration="305000" />
+      <workItem from="1565660632274" duration="598000" />
+      <workItem from="1565988714923" duration="1727000" />
+      <workItem from="1566089897436" duration="1536000" />
+      <workItem from="1566206684067" duration="1360000" />
+      <workItem from="1566260435486" duration="237000" />
+      <workItem from="1566439834973" duration="1504000" />
+      <workItem from="1566617404231" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104870000" />
+    <option name="totallyTimeSpent" value="136694000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34120172" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2360515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -615,7 +702,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.386747" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20851064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -624,7 +711,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32765958" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -701,183 +788,44 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java</url>
-          <line>62</line>
+          <line>66</line>
           <properties />
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.16.RELEASE/spring-context-4.3.16.RELEASE.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.16.RELEASE/spring-context-4.3.16.RELEASE.jar!/org/springframework/context/support/AbstractRefreshableConfigApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-web/src/main/resources/story.spring/appcontext-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-web/src/main/resources/story.spring/appcontext-core.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-web/src/main/java/com/howie/story/spring/AspectAop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Design.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/production/story-spring/com/howie/story/spring/designPattern/Proxy/RealSubject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#406#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/production/story-spring/com/howie/story/spring/designPattern/Proxy/dynamicProxy/DynamicProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/CglibProxy/CglibProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-x-spring/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/production/story-spring/com/howie/story/spring/designPattern/Proxy/ProxyTest.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/concurrent/SemaphoreTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/FeiBoLaQie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SearchUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/SortMerge.java" />
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5130">
-          <caret line="345" column="9" selection-start-line="345" selection-start-column="9" selection-end-line="345" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7911#7912#0" expanded="true" />
-            <element signature="e#7956#7957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/ProxyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/production/story-spring/com/howie/story/spring/designPattern/Proxy/Subject.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/privoder/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/reigster/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/story-biz/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
@@ -934,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/PalindromeNumber_09.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/ReverseNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -962,41 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/api/QueueApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="131" column="27" lean-forward="true" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,17 +958,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MergeSortList.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java">
+    <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/staticProxy/StaticProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="330">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9060">
+          <caret line="627" column="6" selection-start-line="627" selection-start-column="6" selection-end-line="627" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/util/HtmlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="245" column="21" selection-start-line="245" selection-start-column="21" selection-end-line="245" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1083,20 +1024,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.vmoptions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="105">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/staticProxy/StaticProxy.java">
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SearchUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="198">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/NumberUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/FeiBoLaQie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/LengthOfLongestSubstring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Add_Two_numbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="method#addTwoNumbers#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/reverseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MergeSortList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/LinkedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="203" column="33" selection-start-line="203" selection-start-column="28" selection-end-line="203" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/TestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/alibaba/SortCenterNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/NodeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/node/XBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2385">
+          <caret line="167" column="9" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3525">
+          <caret line="236" column="38" selection-start-line="236" selection-start-column="38" selection-end-line="236" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/PalindromeNumber_09.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/MergeTwoSortedLists_21.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/Perm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/bean/SLinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/medium/Search_a_2D_Matrix_II.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/PrintOddAndEven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MediaNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/PicDiscernUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/LinkIntersection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
