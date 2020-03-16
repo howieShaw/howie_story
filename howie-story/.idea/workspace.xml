@@ -2,136 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6804429f-9c5a-4337-98e1-e01a450d9890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/xiaohaoyun.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/link/AbstractLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/link/ChainLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/link/DebuggerLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/link/ErrorLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/link/InfoLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/link/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/ProxyMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/RealSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/SubjectProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/strategy/BizCodeNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/strategy/ChannelNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/strategy/INoticeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/strategy/ModuleNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/strategy/NoticeContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/strategy/NoticeMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/strategy/PoolNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/offer/MirrorRecursively.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/rpc/annotion/RPCService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/test/Father.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/test/Son.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/chain/Ceo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/chain/ChainMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/chain/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/chain/PriceChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/chain/PriceHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/chain/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springweb_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/story_spring_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/Advice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/AfterAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/BeforeAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/DynamicProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/MyInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/howie-story.iml" beforeDir="false" afterPath="$PROJECT_DIR$/howie-story.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/src/main/java/com/howie/story/api/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/story-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/story-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-api/target/classes/com/howie/story/api/dto/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/SortUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/story-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/story-biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/alibaba/SortCenterNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/alibaba/SortCenterNum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/concurrent/SemaphoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/concurrent/SemaphoreTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/dataStructure/MyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/dataStructure/MyMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/factory/RegisterHandlerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/factory/RegisterHandlerFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Hard/LRUCache$CacheNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Hard/LRUCache$CacheNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Hard/LRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/Hard/LRUCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/AddTwoNumbers_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/AddTwoNumbers_02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ClimbingStairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ClimbingStairs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/LongestCommonPrefix_14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/MergeTwoSortedLists_21.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/MergeTwoSortedLists_21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/PalindromeNumber_09.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/PalindromeNumber_09.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/RemoveDuplicatesFromSortedArray_26.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/RemoveDuplicatesFromSortedArray_26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/RemoveElement_26.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/RemoveElement_26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ReverseInteger_07.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ReverseInteger_07.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ReverseNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ReverseNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ReverseString.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ReverseString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/RomanToInteger_13.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/RomanToInteger_13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/TwoSum_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/TwoSum_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ValidParentheses_20.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ValidParentheses_20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/Add_Two_numbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/Add_Two_numbers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/LengthOfLongestSubstring.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/LengthOfLongestSubstring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/LengthSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/LengthSolution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/Search_a_2D_Matrix_II.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/Search_a_2D_Matrix_II.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/medium/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/FeiBoLaQie.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/FeiBoLaQie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/LRUCache$CacheNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/LRUCache$CacheNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/LRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/LRUCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MediaNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MediaNum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MergeSortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/MergeSortList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/Perm.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/Perm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintEVEN.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintEVEN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintODD.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven$PrintODD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/PrintOddAndEven.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/TopK.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/offer/TopK.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/process/UserServiceProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/process/UserServiceProcess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/response/FResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/response/FResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/response/SResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/response/SResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/response/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/response/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/framewoker/UrlRpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/framewoker/UrlRpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/privoder/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/privoder/HelloService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/privoder/impl/HelloServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/privoder/impl/HelloServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/protocol/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/protocol/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/protocol/http/HttpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/protocol/http/HttpService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/reigster/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/rpc/reigster/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/service/ServiceMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/service/ServiceMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/BaseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/BaseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/CommonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/EntityUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/EntityUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/IOUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/IOUtil$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/IOUtil$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/IOUtil$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/IOUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/IOUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/NodeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/NodeUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/NumberUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/NumberUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/PicDiscernUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/PicDiscernUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SearchUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SearchUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/SortUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/TestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/TestUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/reverseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/reverseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/view/Print_ABC.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/util/view/Print_ABC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/viewImpl/BaseViewServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/viewImpl/BaseViewServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/worker/AddNumberWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/worker/AddNumberWorker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/zPracticeUtil/JVM.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/zPracticeUtil/JVM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/zPracticeUtil/jvm/ConstantPoolOOM.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/zPracticeUtil/jvm/ConstantPoolOOM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/src/main/java/com/howie/story/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-web/src/main/java/com/howie/story/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/story-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-web/story-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/bean/DWord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/lock/ObjWaitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/lock/SynchronizedTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/lock/SynchronizedTest$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/lock/SynchronizedTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/test/LongTest$ChangeL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/test/LongTest$ReadL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/test/LongTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/webUtil/EMF2PDF$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/webUtil/EMF2PDF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/webUtil/ESClientUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/webUtil/HttpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/target/classes/com/howie/story/webUtil/SPLUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-x-spring/src/main/java/com/howie/story/x/spring/designPattern/Proxy/ProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-x-spring/story-x-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-x-spring/story-x-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/ProxyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/ProxyMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/RealSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/designPattern/proxy/RealSubject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +60,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ProxyMain">
     <configuration name="NoticeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.designPattern.strategy.NoticeMain" />
       <module name="story-biz" />
@@ -196,8 +74,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProxyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.howie.story.biz.designPattern.proxy.ProxyMain" />
+      <module name="story-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.howie.story.biz.designPattern.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyMain" />
         <item itemvalue="Application.NoticeMain" />
       </list>
     </recent_temporary>
@@ -213,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575449618742</updated>
       <workItem from="1575449620052" duration="2972000" />
-      <workItem from="1584342631068" duration="2659000" />
+      <workItem from="1584342631068" duration="5181000" />
     </task>
     <servers />
   </component>
@@ -221,30 +113,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1584347583933">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1584351141544">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584347583933" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584351141544" />
     <state x="482" y="77" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584342802386">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="77" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584342802386" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1584343579360">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1584352674975">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584343579360" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1584343579357">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584352674975" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1584352674972">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584343579357" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1584343579356">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584352674972" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1584352674971">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584343579356" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1584343579358">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584352674971" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1584352674973">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584343579358" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1584352674973" />
     <state x="208" y="31" key="SettingsEditor" timestamp="1584342741533">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
