@@ -8,6 +8,7 @@
     <artifactId>howie-story</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>story-api</module>
         <module>story-biz</module>
@@ -24,6 +25,10 @@
         <alibaba.druid.version>1.0.29</alibaba.druid.version>
         <junit.version>4.11</junit.version>
         <log4j.version>1.8.0-alpha2</log4j.version>
+
+        <maven.compiler.source>11</maven.compiler.source>
+
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
 

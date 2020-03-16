@@ -10,7 +10,7 @@ public class ProxyTest {
 //        Subject subject = new StaticProxy(new RealSubject());
 //        subject.print("现在是静态代理测试");
 //        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles",true);
-        Subject dySubject = (Subject) Proxy.newProxyInstance(ProxyTest.class.getClassLoader(),new Class[]{Subject.class}
+        Subject dySubject = (Subject) Proxy.newProxyInstance(RealSubject.class.getClassLoader(),new Class[]{Subject.class}
         ,new DynamicProxy(new RealSubject()));
         dySubject.print("动态测试");
     }

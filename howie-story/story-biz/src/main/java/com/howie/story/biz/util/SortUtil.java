@@ -20,6 +20,8 @@ public class SortUtil {
         heapSort(arr);
 //        mergeSort(arr);
         BaseUtil.traversArr(arr);
+
+        String ss = "";
     }
 
     private static SNode<Integer>[] mockSnode () {

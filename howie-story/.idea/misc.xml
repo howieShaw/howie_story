@@ -16,10 +16,13 @@
       <profile-state>
         <expanded-state>
           <State />
+          <State>
+            <id>HTML</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android</id>
+            <id>CheckValidXmlInScriptTagBody</id>
           </State>
         </selected-state>
       </profile-state>
