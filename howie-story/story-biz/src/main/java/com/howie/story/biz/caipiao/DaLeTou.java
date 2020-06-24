@@ -37,6 +37,7 @@ public class DaLeTou {
         System.out.println(getRandomOne());
         System.out.println(getRandomOne());
         System.out.println(getRandomOne());
+//        大乐透算法
 
     }
 }
