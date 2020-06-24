@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6804429f-9c5a-4337-98e1-e01a450d9890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/caipiao/DaLeTou.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/caipiao/ShuangSeQiu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/excel/ExcelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/Hard/MedianOfTwoArray_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/util/RandomUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/story_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/story_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+    <list default="true" id="6804429f-9c5a-4337-98e1-e01a450d9890" name="Default Changelist" comment="提交">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/ValidParentheses_20.java" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/src/main/java/com/howie/story/biz/leetCode/easy/ValidParentheses_20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/story-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/story-biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/designPattern/proxy/DynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/designPattern/proxy/DynamicProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ValidParentheses_20.class" beforeDir="false" afterPath="$PROJECT_DIR$/story-biz/target/classes/com/howie/story/biz/leetCode/easy/ValidParentheses_20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story-web/story-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/story-web/story-web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +57,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -170,12 +177,35 @@
       <workItem from="1587986689138" duration="593000" />
       <workItem from="1588404461093" duration="1225000" />
       <workItem from="1590842664921" duration="805000" />
-      <workItem from="1592966325277" duration="609000" />
+      <workItem from="1592966325277" duration="1013000" />
     </task>
+    <task id="LOCAL-00001" summary="提交">
+      <created>1592967436093</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592967436093</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Inspections" timestamp="1587719993193">
